@@ -1,0 +1,296 @@
+[
+  {
+    "id": 5,
+    "name": "Veggie Paradise",
+    "category": "Pizza",
+    "img": "/Images/Veggie-Paradise.jpg",
+    "description": "Onion, capsicum, jalapeno, tomato topped veggie delight.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      },
+      {
+        "size": "Medium",
+        "price": 260
+      },
+      {
+        "size": "Large",
+        "price": 360
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Pappy Paneer",
+    "category": "Pizza",
+    "img": "/Images/Pappy-Paneer.jpg",
+    "description": "Capsicum, onion, red paprika and paneer chunks with cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      },
+      {
+        "size": "Medium",
+        "price": 260
+      },
+      {
+        "size": "Large",
+        "price": 360
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Feta Cheese Pizza",
+    "category": "Pizza",
+    "img": "/Images/Feta-Cheese-Pizza.jpg",
+    "description": "Capsicum, black olives, jalapeno with feta cheese topping.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      },
+      {
+        "size": "Medium",
+        "price": 260
+      },
+      {
+        "size": "Large",
+        "price": 360
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Mexican Paneer Pizza",
+    "category": "Pizza",
+    "img": "/Images/Mexican-Paneer-Pizza.jpg",
+    "description": "Capsicum, paneer, baby corn with Mexican spices.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      },
+      {
+        "size": "Medium",
+        "price": 260
+      },
+      {
+        "size": "Large",
+        "price": 360
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Veg Deluxe Pizza",
+    "category": "Pizza",
+    "img": "/Images/Veg-Deluxe-Pizza.jpg",
+    "description": "Loaded veggie pizza with capsicum, onion, corn and cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 190
+      },
+      {
+        "size": "Medium",
+        "price": 280
+      },
+      {
+        "size": "Large",
+        "price": 400
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Sweet Chilli Pizza",
+    "category": "Pizza",
+    "img": "/Images/Sweet-Chilli-Pizza.jpg",
+    "description": "Sweet chilli sauce base topped with capsicum, onion and cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 190
+      },
+      {
+        "size": "Medium",
+        "price": 280
+      },
+      {
+        "size": "Large",
+        "price": 400
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Black & White Pizza",
+    "category": "Pizza",
+    "img": "/Images/Black-White-Pizza.jpg",
+    "description": "Combination of white sauce and black olives with cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 190
+      },
+      {
+        "size": "Medium",
+        "price": 280
+      },
+      {
+        "size": "Large",
+        "price": 400
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Triple Capsicum Pizza",
+    "category": "Pizza",
+    "img": "/Images/Triple-Capsicum-Pizza.jpg",
+    "description": "Red, yellow and green capsicum with mozzarella cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 190
+      },
+      {
+        "size": "Medium",
+        "price": 280
+      },
+      {
+        "size": "Large",
+        "price": 400
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Makhni Pizza",
+    "category": "Pizza",
+    "img": "/Images/Makhni-Pizza.jpg",
+    "description": "Creamy makhni sauce topped with onion, capsicum and olives.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      },
+      {
+        "size": "Medium",
+        "price": 300
+      },
+      {
+        "size": "Large",
+        "price": 450
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Chipotle Pizza",
+    "category": "Pizza",
+    "img": "/Images/Chipotle-Pizza.jpg",
+    "description": "Chipotle sauce base with onion, capsicum and jalapeno.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      },
+      {
+        "size": "Medium",
+        "price": 300
+      },
+      {
+        "size": "Large",
+        "price": 450
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Tandoori Pizza",
+    "category": "Pizza",
+    "img": "/Images/Tandoori-Pizza.jpg",
+    "description": "Tandoori flavoured pizza with onion, capsicum and paneer.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      },
+      {
+        "size": "Medium",
+        "price": 300
+      },
+      {
+        "size": "Large",
+        "price": 450
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Supreme Pizza",
+    "category": "Pizza",
+    "img": "/Images/Supreme-Pizza.jpg",
+    "description": "Premium pizza with olives, corn, capsicum and rich cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 230
+      },
+      {
+        "size": "Medium",
+        "price": 350
+      },
+      {
+        "size": "Large",
+        "price": 560
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "5 Star Pizza",
+    "category": "Pizza",
+    "img": "/Images/5-Star-Pizza.jpg",
+    "description": "House special loaded pizza with extra cheese and veggies.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 230
+      },
+      {
+        "size": "Medium",
+        "price": 350
+      },
+      {
+        "size": "Large",
+        "price": 560
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "New Vijay Bakery Special Pizza",
+    "category": "Pizza",
+    "img": "/Images/New-Vijay-Bakery-Special-Pizza.jpg",
+    "description": "Signature bakery special pizza with beetroot, coriander and cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 230
+      },
+      {
+        "size": "Medium",
+        "price": 350
+      },
+      {
+        "size": "Large",
+        "price": 560
+      }
+    ]
+  }
+]

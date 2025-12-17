@@ -1,0 +1,106 @@
+[
+  {
+    "id": 41,
+    "name": "Aloo Tikki Wrap",
+    "category": "Wrap",
+    "img": "/Images/Aloo-Tikki-Wrap.jpg",
+    "description": "Crispy aloo tikki wrapped with fresh veggies and sauces.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 99
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Salad Wrap",
+    "category": "Wrap",
+    "img": "/Images/Salad-Wrap.jpg",
+    "description": "Fresh salad wrap with mixed vegetables and light dressing.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Peri Peri Wrap",
+    "category": "Wrap",
+    "img": "/Images/Peri-Peri-Wrap.jpg",
+    "description": "Veg wrap tossed in spicy peri peri seasoning.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Veg Cheese Wrap",
+    "category": "Wrap",
+    "img": "/Images/Veg-Cheese-Wrap.jpg",
+    "description": "Veg wrap loaded with melted cheese for a creamy bite.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Mexican Wrap",
+    "category": "Wrap",
+    "img": "/Images/Mexican-Wrap.jpg",
+    "description": "Mexican-style spiced veggie wrap with tangy flavours.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Kadai Paneer Wrap",
+    "category": "Wrap",
+    "img": "/Images/Kadai-Paneer-Wrap.jpg",
+    "description": "Spicy kadai paneer filling wrapped in soft bread.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Mushroom Wrap",
+    "category": "Wrap",
+    "img": "/Images/Mushroom-Wrap.jpg",
+    "description": "Sauteed mushrooms with spices wrapped fresh.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Paneer Crunch Wrap",
+    "category": "Wrap",
+    "img": "/Images/Paneer-Crunch-Wrap.jpg",
+    "description": "Crunchy paneer filling with sauces in a soft wrap.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 140
+      }
+    ]
+  }
+]

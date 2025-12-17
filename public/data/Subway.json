@@ -1,0 +1,67 @@
+[
+  {
+    "id": 36,
+    "name": "Veg Sub",
+    "category": "Subway",
+    "img": "/Images/Veg-Sub.jpg",
+    "description": "Fresh veggie sub with sauces in soft bread.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 90
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Cheese Spicy Sub",
+    "category": "Subway",
+    "img": "/Images/Cheese-Spicy-Sub.jpg",
+    "description": "Cheese-loaded sub with spicy seasoning.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Paneer Crunchy Sub",
+    "category": "Subway",
+    "img": "/Images/Paneer-Crunchy-Sub.jpg",
+    "description": "Crunchy paneer filling with veggies and sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Veg Hara Bhara Sub",
+    "category": "Subway",
+    "img": "/Images/Veg-Hara-Bhara-Sub.jpg",
+    "description": "Hara bhara kebab style patty in sub bread.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Nacho Subway",
+    "category": "Subway",
+    "img": "/Images/Nacho-Subway.jpg",
+    "description": "Nacho cheese sauce with veggies in sub bread.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  }
+]

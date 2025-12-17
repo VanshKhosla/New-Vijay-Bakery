@@ -1,0 +1,145 @@
+[
+  {
+    "id": 98,
+    "name": "Vanilla Shake",
+    "category": "Shakes",
+    "img": "/Images/Vanilla-Shake.jpg",
+    "description": "Classic vanilla milkshake made with milk and ice cream.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Strawberry Shake",
+    "category": "Shakes",
+    "img": "/Images/Strawberry-Shake.jpg",
+    "description": "Sweet strawberry flavoured milkshake.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Butter Scotch Shake",
+    "category": "Shakes",
+    "img": "/Images/Butter-Scotch-Shake.jpg",
+    "description": "Creamy butterscotch flavoured shake.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Oreo Milk Shake",
+    "category": "Shakes",
+    "img": "/Images/Oreo-Milk-Shake.jpg",
+    "description": "Thick shake blended with Oreo biscuits.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Dairy Milk Shake",
+    "category": "Shakes",
+    "img": "/Images/Dairy-Milk-Shake.jpg",
+    "description": "Chocolate shake made with Dairy Milk chocolate.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 140
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Kit Kat Shake",
+    "category": "Shakes",
+    "img": "/Images/Kit-Kat-Shake.jpg",
+    "description": "Rich milkshake blended with KitKat chocolate.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 140
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Black Currant Shake",
+    "category": "Shakes",
+    "img": "/Images/Black-Currant-Shake.jpg",
+    "description": "Fruity black currant flavoured milkshake.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Bubble Gum Shake",
+    "category": "Shakes",
+    "img": "/Images/Bubble-Gum-Shake.jpg",
+    "description": "Sweet bubble gum flavoured shake.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Pineapple Shake",
+    "category": "Shakes",
+    "img": "/Images/Pineapple-Shake.jpg",
+    "description": "Refreshing pineapple flavoured milkshake.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Kiwi Shake",
+    "category": "Shakes",
+    "img": "/Images/Kiwi-Shake.jpg",
+    "description": "Tangy kiwi flavoured milkshake.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 140
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Cream Biscoff Shake",
+    "category": "Shakes",
+    "img": "/Images/Cream-Biscoff-Shake.jpg",
+    "description": "Premium creamy shake made with Biscoff biscuits.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  }
+]

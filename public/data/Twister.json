@@ -1,0 +1,41 @@
+[
+  {
+    "id": 49,
+    "name": "Masala Twister",
+    "category": "Twister",
+    "img": "/Images/Masala-Twister.jpg",
+    "description": "Classic masala-flavoured veg twister wrapped in soft roti.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Peri Peri Twister",
+    "category": "Twister",
+    "img": "/Images/Peri-Peri-Twister.jpg",
+    "description": "Spicy peri peri seasoned veg twister.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Mix Sauce Twister",
+    "category": "Twister",
+    "img": "/Images/Mix-Sauce-Twister.jpg",
+    "description": "Veg twister tossed in a mix of red and white sauces.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  }
+]

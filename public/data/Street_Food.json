@@ -1,0 +1,119 @@
+[
+  {
+    "id": 137,
+    "name": "Manchurian Dry",
+    "category": "Street Food",
+    "img": "/Images/Manchurian-Dry.jpg",
+    "description": "Deep-fried vegetable balls tossed in Indo-Chinese spices.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Manchurian Gravy",
+    "category": "Street Food",
+    "img": "/Images/Manchurian-Gravy.jpg",
+    "description": "Veg manchurian served in thick, spicy gravy.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 220
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Mexican Veg Crispy",
+    "category": "Street Food",
+    "img": "/Images/Mexican-Veg-Crispy.jpg",
+    "description": "Crispy fried vegetables with Mexican-style seasoning.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Cauliflower 72",
+    "category": "Street Food",
+    "img": "/Images/Cauliflower-72.jpg",
+    "description": "Crispy cauliflower tossed in tangy sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Honey Cauliflower",
+    "category": "Street Food",
+    "img": "/Images/Honey-Cauliflower.jpg",
+    "description": "Fried cauliflower coated in sweet honey glaze.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 160
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Baby Corn Crispy",
+    "category": "Street Food",
+    "img": "/Images/Baby-Corn-Crispy.jpg",
+    "description": "Crispy fried baby corn with spices.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 180
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Honey Chilli Potato",
+    "category": "Street Food",
+    "img": "/Images/Honey-Chilli-Potato.jpg",
+    "description": "Fried potato fingers tossed in honey chilli sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 180
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "name": "American Chopsuey",
+    "category": "Street Food",
+    "img": "/Images/American-Chopsuey.jpg",
+    "description": "Crispy noodles topped with sweet and tangy vegetable gravy.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 220
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Manchurian Toast",
+    "category": "Street Food",
+    "img": "/Images/Manchurian-Toast.jpg",
+    "description": "Crispy toast topped with veg manchurian gravy.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 230
+      }
+    ]
+  }
+]

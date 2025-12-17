@@ -1,0 +1,119 @@
+[
+  {
+    "id": 19,
+    "name": "Aloo Tikki Burger",
+    "category": "Burger",
+    "img": "/Images/Aloo-Tikki-Burger.jpg",
+    "description": "Crispy aloo tikki patty with fresh veggies and classic sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 40
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Veg Burger",
+    "category": "Burger",
+    "img": "/Images/Veg-Burger.jpg",
+    "description": "Veg patty burger with onion, tomato and mayo.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Cheese Spicy Burger",
+    "category": "Burger",
+    "img": "/Images/Cheese-Spicy-Burger.jpg",
+    "description": "Spicy veg patty loaded with melted cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 70
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Tandoori Tange Burger",
+    "category": "Burger",
+    "img": "/Images/Tandoori-Tange-Burger.jpg",
+    "description": "Tandoori-flavoured veg patty with smoky taste.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Peri Peri Burger",
+    "category": "Burger",
+    "img": "/Images/Peri-Peri-Burger.jpg",
+    "description": "Peri peri seasoned patty with spicy sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Paneer Crunchy Burger",
+    "category": "Burger",
+    "img": "/Images/Paneer-Crunchy-Burger.jpg",
+    "description": "Crunchy paneer patty with fresh lettuce and sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 90
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Mexican Burger",
+    "category": "Burger",
+    "img": "/Images/Mexican-Burger.jpg",
+    "description": "Mexican-spiced patty with tangy salsa flavour.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Nacho Cheese Burger",
+    "category": "Burger",
+    "img": "/Images/Nacho-Cheese-Burger.jpg",
+    "description": "Nacho cheese sauce layered over a crispy veg patty.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Maharaja Burger",
+    "category": "Burger",
+    "img": "/Images/Maharaja-Burger.jpg",
+    "description": "Jumbo-sized veg burger with double filling and cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  }
+]

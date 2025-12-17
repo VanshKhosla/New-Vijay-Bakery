@@ -1,0 +1,158 @@
+[
+  {
+    "id": 150,
+    "name": "New Vijay Bakery Special Atta Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Atta-Kulcha.jpg",
+    "description": "Special atta kulcha prepared with house spices and butter.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 70
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Churchur Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Churchur-Kulcha.jpg",
+    "description": "Crispy layered churchur-style kulcha served hot.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "name": "Batala Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Batala-Kulcha.jpg",
+    "description": "Traditional Batala-style kulcha, bakery special.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 60
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Mix Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Mix-Kulcha.jpg",
+    "description": "Kulcha stuffed with mixed vegetable filling.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 70
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Onion Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Onion-Kulcha.jpg",
+    "description": "Kulcha stuffed with spiced onion filling.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 70
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Kulcha Patty (Without Paneer)",
+    "category": "Kulcha",
+    "img": "/Images/Kulcha-Patty-Without-Paneer.jpg",
+    "description": "Kulcha served with patty and curry, without paneer.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Patty Paneer",
+    "category": "Kulcha",
+    "img": "/Images/Patty-Paneer-Kulcha.jpg",
+    "description": "Paneer patty kulcha served with rich curry.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 140
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Paneer Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Paneer-Kulcha.jpg",
+    "description": "Kulcha stuffed with spiced paneer filling.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 90
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Papad Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Papad-Kulcha.jpg",
+    "description": "Crispy papad-stuffed kulcha with butter.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Ginger Garlic Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Ginger-Garlic-Kulcha.jpg",
+    "description": "Kulcha flavoured with ginger and garlic seasoning.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 70
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Gobi Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Gobi-Kulcha.jpg",
+    "description": "Kulcha stuffed with spiced cauliflower filling.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Special Desi Ghee Wala Kulcha",
+    "category": "Kulcha",
+    "img": "/Images/Desi-Ghee-Wala-Kulcha.jpg",
+    "description": "Kulcha roasted and topped generously with desi ghee.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  }
+]

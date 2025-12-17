@@ -1,5 +1,4 @@
-import React, { useMemo, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useMemo, useState, useEffect } from "react";
 
 const CATEGORIES = [
   "All", "Add-Ons", "Kulcha", "Deluxe Pizza", "Pizza", "Burger", "Sandwich", "Subway", "Wrap", "Pasta", "Noodles",
@@ -16,1759 +15,6 @@ const GOLD_GRADIENT = {
 
 const GOLD_SOFT = { color: "#ffd700" };
 
-// ⬇ SAMPLE (EMPTY) menu. You will paste your menu here later.
-const menuItems = [
-  {
-    id: 1,
-    name: "Margherita Pizza",
-    category: "Deluxe Pizza",
-    img: "/Images/Margherita-Pizza.jpg",
-    description: "Classic pizza topped with rich mozzarella cheese on a soft, crispy base.",
-    variants: [
-      { size: "Small", price: 99 },
-      { size: "Medium", price: 250 },
-      { size: "Large", price: 300 }
-    ]
-  },
-  {
-    id: 2,
-    name: "Cheese Corn Pizza",
-    category: "Deluxe Pizza",
-    img: "/Images/Cheese-Corn-Pizza.jpg",
-    description: "Loaded with sweet corn and melted cheese for a creamy bite.",
-    variants: [
-      { size: "Small", price: 99 },
-      { size: "Medium", price: 250 },
-      { size: "Large", price: 300 }
-    ]
-  },
-  {
-    id: 3,
-    name: "Onion Paneer Pizza",
-    category: "Deluxe Pizza",
-    img: "/Images/Onion-Paneer-Pizza.jpg",
-    description: "Fresh onions and soft paneer cubes on a cheesy pizza base.",
-    variants: [
-      { size: "Small", price: 99 },
-      { size: "Medium", price: 250 },
-      { size: "Large", price: 300 }
-    ]
-  },
-  {
-    id: 4,
-    name: "Onion Capsicum Pizza",
-    category: "Deluxe Pizza",
-    img: "/Images/Onion-Capsicum-Pizza.jpg",
-    description: "Crunchy onions and capsicum layered with mozzarella cheese.",
-    variants: [
-      { size: "Small", price: 99 },
-      { size: "Medium", price: 250 },
-      { size: "Large", price: 300 }
-    ]
-  },
-  {
-    id: 5,
-    name: "Veggie Paradise",
-    category: "Pizza",
-    img: "/Images/Veggie-Paradise.jpg",
-    description: "Onion, capsicum, jalapeno, tomato topped veggie delight.",
-    variants: [
-      { size: "Regular", price: 150 },
-      { size: "Medium", price: 260 },
-      { size: "Large", price: 360 }
-    ]
-  },
-  {
-    id: 6,
-    name: "Pappy Paneer",
-    category: "Pizza",
-    img: "/Images/Pappy-Paneer.jpg",
-    description: "Capsicum, onion, red paprika and paneer chunks with cheese.",
-    variants: [
-      { size: "Regular", price: 150 },
-      { size: "Medium", price: 260 },
-      { size: "Large", price: 360 }
-    ]
-  },
-  {
-    id: 7,
-    name: "Feta Cheese Pizza",
-    category: "Pizza",
-    img: "/Images/Feta-Cheese-Pizza.jpg",
-    description: "Capsicum, black olives, jalapeno with feta cheese topping.",
-    variants: [
-      { size: "Regular", price: 150 },
-      { size: "Medium", price: 260 },
-      { size: "Large", price: 360 }
-    ]
-  },
-  {
-    id: 8,
-    name: "Mexican Paneer Pizza",
-    category: "Pizza",
-    img: "/Images/Mexican-Paneer-Pizza.jpg",
-    description: "Capsicum, paneer, baby corn with Mexican spices.",
-    variants: [
-      { size: "Regular", price: 150 },
-      { size: "Medium", price: 260 },
-      { size: "Large", price: 360 }
-    ]
-  },
-  {
-    id: 9,
-    name: "Veg Deluxe Pizza",
-    category: "Pizza",
-    img: "/Images/Veg-Deluxe-Pizza.jpg",
-    description: "Loaded veggie pizza with capsicum, onion, corn and cheese.",
-    variants: [
-      { size: "Regular", price: 190 },
-      { size: "Medium", price: 280 },
-      { size: "Large", price: 400 }
-    ]
-  },
-  {
-    id: 10,
-    name: "Sweet Chilli Pizza",
-    category: "Pizza",
-    img: "/Images/Sweet-Chilli-Pizza.jpg",
-    description: "Sweet chilli sauce base topped with capsicum, onion and cheese.",
-    variants: [
-      { size: "Regular", price: 190 },
-      { size: "Medium", price: 280 },
-      { size: "Large", price: 400 }
-    ]
-  },
-  {
-    id: 11,
-    name: "Black & White Pizza",
-    category: "Pizza",
-    img: "/Images/Black-White-Pizza.jpg",
-    description: "Combination of white sauce and black olives with cheese.",
-    variants: [
-      { size: "Regular", price: 190 },
-      { size: "Medium", price: 280 },
-      { size: "Large", price: 400 }
-    ]
-  },
-  {
-    id: 12,
-    name: "Triple Capsicum Pizza",
-    category: "Pizza",
-    img: "/Images/Triple-Capsicum-Pizza.jpg",
-    description: "Red, yellow and green capsicum with mozzarella cheese.",
-    variants: [
-      { size: "Regular", price: 190 },
-      { size: "Medium", price: 280 },
-      { size: "Large", price: 400 }
-    ]
-  },
-  {
-    id: 13,
-    name: "Makhni Pizza",
-    category: "Pizza",
-    img: "/Images/Makhni-Pizza.jpg",
-    description: "Creamy makhni sauce topped with onion, capsicum and olives.",
-    variants: [
-      { size: "Regular", price: 200 },
-      { size: "Medium", price: 300 },
-      { size: "Large", price: 450 }
-    ]
-  },
-  {
-    id: 14,
-    name: "Chipotle Pizza",
-    category: "Pizza",
-    img: "/Images/Chipotle-Pizza.jpg",
-    description: "Chipotle sauce base with onion, capsicum and jalapeno.",
-    variants: [
-      { size: "Regular", price: 200 },
-      { size: "Medium", price: 300 },
-      { size: "Large", price: 450 }
-    ]
-  },
-  {
-    id: 15,
-    name: "Tandoori Pizza",
-    category: "Pizza",
-    img: "/Images/Tandoori-Pizza.jpg",
-    description: "Tandoori flavoured pizza with onion, capsicum and paneer.",
-    variants: [
-      { size: "Regular", price: 200 },
-      { size: "Medium", price: 300 },
-      { size: "Large", price: 450 }
-    ]
-  },
-  {
-    id: 16,
-    name: "Supreme Pizza",
-    category: "Pizza",
-    img: "/Images/Supreme-Pizza.jpg",
-    description: "Premium pizza with olives, corn, capsicum and rich cheese.",
-    variants: [
-      { size: "Regular", price: 230 },
-      { size: "Medium", price: 350 },
-      { size: "Large", price: 560 }
-    ]
-  },
-  {
-    id: 17,
-    name: "5 Star Pizza",
-    category: "Pizza",
-    img: "/Images/5-Star-Pizza.jpg",
-    description: "House special loaded pizza with extra cheese and veggies.",
-    variants: [
-      { size: "Regular", price: 230 },
-      { size: "Medium", price: 350 },
-      { size: "Large", price: 560 }
-    ]
-  },
-  {
-    id: 18,
-    name: "New Vijay Bakery Special Pizza",
-    category: "Pizza",
-    img: "/Images/New-Vijay-Bakery-Special-Pizza.jpg",
-    description: "Signature bakery special pizza with beetroot, coriander and cheese.",
-    variants: [
-      { size: "Regular", price: 230 },
-      { size: "Medium", price: 350 },
-      { size: "Large", price: 560 }
-    ]
-  },
-  {
-    id: 19,
-    name: "Aloo Tikki Burger",
-    category: "Burger",
-    img: "/Images/Aloo-Tikki-Burger.jpg",
-    description: "Crispy aloo tikki patty with fresh veggies and classic sauce.",
-    variants: [
-      { size: "Regular", price: 40 }
-    ]
-  },
-  {
-    id: 20,
-    name: "Veg Burger",
-    category: "Burger",
-    img: "/Images/Veg-Burger.jpg",
-    description: "Veg patty burger with onion, tomato and mayo.",
-    variants: [
-      { size: "Regular", price: 50 }
-    ]
-  },
-  {
-    id: 21,
-    name: "Cheese Spicy Burger",
-    category: "Burger",
-    img: "/Images/Cheese-Spicy-Burger.jpg",
-    description: "Spicy veg patty loaded with melted cheese.",
-    variants: [
-      { size: "Regular", price: 70 }
-    ]
-  },
-  {
-    id: 22,
-    name: "Tandoori Tange Burger",
-    category: "Burger",
-    img: "/Images/Tandoori-Tange-Burger.jpg",
-    description: "Tandoori-flavoured veg patty with smoky taste.",
-    variants: [
-      { size: "Regular", price: 80 }
-    ]
-  },
-  {
-    id: 23,
-    name: "Peri Peri Burger",
-    category: "Burger",
-    img: "/Images/Peri-Peri-Burger.jpg",
-    description: "Peri peri seasoned patty with spicy sauce.",
-    variants: [
-      { size: "Regular", price: 80 }
-    ]
-  },
-  {
-    id: 24,
-    name: "Paneer Crunchy Burger",
-    category: "Burger",
-    img: "/Images/Paneer-Crunchy-Burger.jpg",
-    description: "Crunchy paneer patty with fresh lettuce and sauce.",
-    variants: [
-      { size: "Regular", price: 90 }
-    ]
-  },
-  {
-    id: 25,
-    name: "Mexican Burger",
-    category: "Burger",
-    img: "/Images/Mexican-Burger.jpg",
-    description: "Mexican-spiced patty with tangy salsa flavour.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 26,
-    name: "Nacho Cheese Burger",
-    category: "Burger",
-    img: "/Images/Nacho-Cheese-Burger.jpg",
-    description: "Nacho cheese sauce layered over a crispy veg patty.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 27,
-    name: "Maharaja Burger",
-    category: "Burger",
-    img: "/Images/Maharaja-Burger.jpg",
-    description: "Jumbo-sized veg burger with double filling and cheese.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 28,
-    name: "Veg Grilled Sandwich",
-    category: "Sandwich",
-    img: "/Images/Veg-Grilled-Sandwich.jpg",
-    description: "Grilled sandwich stuffed with fresh vegetables and butter.",
-    variants: [
-      { size: "Regular", price: 80 }
-    ]
-  },
-  {
-    id: 29,
-    name: "Cheese Grilled Sandwich",
-    category: "Sandwich",
-    img: "/Images/Cheese-Grilled-Sandwich.jpg",
-    description: "Classic grilled sandwich loaded with melted cheese.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 30,
-    name: "Kadai Paneer Sandwich",
-    category: "Sandwich",
-    img: "/Images/Kadai-Paneer-Sandwich.jpg",
-    description: "Spicy kadai paneer filling with grilled bread.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 31,
-    name: "Seven Onion Sandwich",
-    category: "Sandwich",
-    img: "/Images/Seven-Onion-Sandwich.jpg",
-    description: "Onion-loaded sandwich with light spices and butter.",
-    variants: [
-      { size: "Regular", price: 80 }
-    ]
-  },
-  {
-    id: 32,
-    name: "Paneer Takatak Sandwich",
-    category: "Sandwich",
-    img: "/Images/Paneer-Takatak-Sandwich.jpg",
-    description: "Tangy paneer takatak masala with grilled bread.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 33,
-    name: "Gym Diet Sandwich",
-    category: "Sandwich",
-    img: "/Images/Gym-Diet-Sandwich.jpg",
-    description: "Healthy sandwich with low oil, veggies and paneer.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 34,
-    name: "Triple Layer Sandwich",
-    category: "Sandwich",
-    img: "/Images/Triple-Layer-Sandwich.jpg",
-    description: "Three-layer sandwich packed with veggies and cheese.",
-    variants: [
-      { size: "Regular", price: 140 }
-    ]
-  },
-  {
-    id: 35,
-    name: "Tandoori Tiyani Sandwich",
-    category: "Sandwich",
-    img: "/Images/Tandoori-Tiyani-Sandwich.jpg",
-    description: "Tandoori-flavoured filling with grilled bread slices.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 36,
-    name: "Veg Sub",
-    category: "Subway",
-    img: "/Images/Veg-Sub.jpg",
-    description: "Fresh veggie sub with sauces in soft bread.",
-    variants: [
-      { size: "Regular", price: 90 }
-    ]
-  },
-  {
-    id: 37,
-    name: "Cheese Spicy Sub",
-    category: "Subway",
-    img: "/Images/Cheese-Spicy-Sub.jpg",
-    description: "Cheese-loaded sub with spicy seasoning.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 38,
-    name: "Paneer Crunchy Sub",
-    category: "Subway",
-    img: "/Images/Paneer-Crunchy-Sub.jpg",
-    description: "Crunchy paneer filling with veggies and sauce.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 39,
-    name: "Veg Hara Bhara Sub",
-    category: "Subway",
-    img: "/Images/Veg-Hara-Bhara-Sub.jpg",
-    description: "Hara bhara kebab style patty in sub bread.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 40,
-    name: "Nacho Subway",
-    category: "Subway",
-    img: "/Images/Nacho-Subway.jpg",
-    description: "Nacho cheese sauce with veggies in sub bread.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 41,
-    name: "Aloo Tikki Wrap",
-    category: "Wrap",
-    img: "/Images/Aloo-Tikki-Wrap.jpg",
-    description: "Crispy aloo tikki wrapped with fresh veggies and sauces.",
-    variants: [
-      { size: "Regular", price: 99 }
-    ]
-  },
-  {
-    id: 42,
-    name: "Salad Wrap",
-    category: "Wrap",
-    img: "/Images/Salad-Wrap.jpg",
-    description: "Fresh salad wrap with mixed vegetables and light dressing.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 43,
-    name: "Peri Peri Wrap",
-    category: "Wrap",
-    img: "/Images/Peri-Peri-Wrap.jpg",
-    description: "Veg wrap tossed in spicy peri peri seasoning.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 44,
-    name: "Veg Cheese Wrap",
-    category: "Wrap",
-    img: "/Images/Veg-Cheese-Wrap.jpg",
-    description: "Veg wrap loaded with melted cheese for a creamy bite.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 45,
-    name: "Mexican Wrap",
-    category: "Wrap",
-    img: "/Images/Mexican-Wrap.jpg",
-    description: "Mexican-style spiced veggie wrap with tangy flavours.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 46,
-    name: "Kadai Paneer Wrap",
-    category: "Wrap",
-    img: "/Images/Kadai-Paneer-Wrap.jpg",
-    description: "Spicy kadai paneer filling wrapped in soft bread.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 47,
-    name: "Mushroom Wrap",
-    category: "Wrap",
-    img: "/Images/Mushroom-Wrap.jpg",
-    description: "Sauteed mushrooms with spices wrapped fresh.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 48,
-    name: "Paneer Crunch Wrap",
-    category: "Wrap",
-    img: "/Images/Paneer-Crunch-Wrap.jpg",
-    description: "Crunchy paneer filling with sauces in a soft wrap.",
-    variants: [
-      { size: "Regular", price: 140 }
-    ]
-  },
-  {
-    id: 49,
-    name: "Masala Twister",
-    category: "Twister",
-    img: "/Images/Masala-Twister.jpg",
-    description: "Classic masala-flavoured veg twister wrapped in soft roti.",
-    variants: [
-      { size: "Regular", price: 80 }
-    ]
-  },
-  {
-    id: 50,
-    name: "Peri Peri Twister",
-    category: "Twister",
-    img: "/Images/Peri-Peri-Twister.jpg",
-    description: "Spicy peri peri seasoned veg twister.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 51,
-    name: "Mix Sauce Twister",
-    category: "Twister",
-    img: "/Images/Mix-Sauce-Twister.jpg",
-    description: "Veg twister tossed in a mix of red and white sauces.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 52,
-    name: "Red Sauce Pasta",
-    category: "Pasta",
-    img: "/Images/Red-Sauce-Pasta.jpg",
-    description: "Pasta cooked in tangy tomato-based red sauce.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 53,
-    name: "White Sauce Pasta",
-    category: "Pasta",
-    img: "/Images/White-Sauce-Pasta.jpg",
-    description: "Creamy white sauce pasta with mild seasoning.",
-    variants: [
-      { size: "Regular", price: 150 }
-    ]
-  },
-  {
-    id: 54,
-    name: "Tandoori Tange Pasta",
-    category: "Pasta",
-    img: "/Images/Tandoori-Tange-Pasta.jpg",
-    description: "Tandoori-flavoured pasta with smoky Indian spices.",
-    variants: [
-      { size: "Regular", price: 150 }
-    ]
-  },
-  {
-    id: 55,
-    name: "Makhni Paneer Pasta",
-    category: "Pasta",
-    img: "/Images/Makhni-Paneer-Pasta.jpg",
-    description: "Rich makhni sauce pasta with paneer cubes.",
-    variants: [
-      { size: "Regular", price: 150 }
-    ]
-  },
-  {
-    id: 56,
-    name: "Pink Sauce Pasta",
-    category: "Pasta",
-    img: "/Images/Pink-Sauce-Pasta.jpg",
-    description: "Perfect blend of red and white sauce in creamy pasta.",
-    variants: [
-      { size: "Regular", price: 170 }
-    ]
-  },
-  {
-    id: 57,
-    name: "Veg Italian Pasta",
-    category: "Pasta",
-    img: "/Images/Veg-Italian-Pasta.jpg",
-    description: "Italian-style pasta tossed with vegetables and herbs.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 58,
-    name: "Green Pasta",
-    category: "Pasta",
-    img: "/Images/Green-Pasta.jpg",
-    description: "Pasta cooked in fresh green herb-based sauce.",
-    variants: [
-      { size: "Regular", price: 190 }
-    ]
-  },
-  {
-    id: 59,
-    name: "Round Cheese Bread",
-    category: "Garlic Bread",
-    img: "/Images/Round-Cheese-Bread.jpg",
-    description: "Round bread topped with cheese and garlic butter.",
-    variants: [
-      { size: "Regular", price: 80 }
-    ]
-  },
-  {
-    id: 60,
-    name: "Cheese Corn Bread",
-    category: "Garlic Bread",
-    img: "/Images/Cheese-Corn-Bread.jpg",
-    description: "Garlic bread topped with cheese and sweet corn.",
-    variants: [
-      { size: "Regular", price: 90 }
-    ]
-  },
-  {
-    id: 61,
-    name: "Stuffed Garlic Bread",
-    category: "Garlic Bread",
-    img: "/Images/Stuffed-Garlic-Bread.jpg",
-    description: "Garlic bread stuffed with cheesy filling.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 62,
-    name: "Italian Garlic Bread",
-    category: "Garlic Bread",
-    img: "/Images/Italian-Garlic-Bread.jpg",
-    description: "Italian-style garlic bread with herbs.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 63,
-    name: "Calzone",
-    category: "Garlic Bread",
-    img: "/Images/Calzone.jpg",
-    description: "Folded pizza-style bread stuffed with cheese and veggies.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 64,
-    name: "Regular Noodles",
-    category: "Noodles",
-    img: "/Images/Regular-Noodles.jpg",
-    description: "Simple stir-fried noodles with vegetables.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 65,
-    name: "Singapore Noodles",
-    category: "Noodles",
-    img: "/Images/Singapore-Noodles.jpg",
-    description: "Spicy Singapore-style noodles.",
-    variants: [
-      { size: "Regular", price: 190 }
-    ]
-  },
-  {
-    id: 66,
-    name: "Hakka Noodles",
-    category: "Noodles",
-    img: "/Images/Hakka-Noodles.jpg",
-    description: "Indo-Chinese hakka noodles with veggies.",
-    variants: [
-      { size: "Regular", price: 190 }
-    ]
-  },
-  {
-    id: 67,
-    name: "Sezwan Noodles",
-    category: "Noodles",
-    img: "/Images/Sezwan-Noodles.jpg",
-    description: "Hot and spicy schezwan noodles.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 68,
-    name: "Chilli Garlic Noodles",
-    category: "Noodles",
-    img: "/Images/Chilli-Garlic-Noodles.jpg",
-    description: "Noodles tossed in chilli garlic sauce.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 69,
-    name: "Garlic Noodles",
-    category: "Noodles",
-    img: "/Images/Garlic-Noodles.jpg",
-    description: "Strong garlic-flavoured noodles.",
-    variants: [
-      { size: "Regular", price: 220 }
-    ]
-  },
-  {
-    id: 70,
-    name: "Dragon Noodles",
-    category: "Noodles",
-    img: "/Images/Dragon-Noodles.jpg",
-    description: "Spicy dragon-style noodles with bold flavours.",
-    variants: [
-      { size: "Regular", price: 230 }
-    ]
-  },
-  {
-    id: 71,
-    name: "New Vijay Bakery Special Thukpa",
-    category: "Noodles",
-    img: "/Images/New-Vijay-Bakery-Special-Thukpa.jpg",
-    description: "House special thukpa noodles with rich broth.",
-    variants: [
-      { size: "Regular", price: 250 }
-    ]
-  },
-  {
-    id: 72,
-    name: "Spring Roll",
-    category: "Spring Roll",
-    img: "/Images/Spring-Roll.jpg",
-    description: "Crispy fried vegetable spring rolls.",
-    variants: [
-      { size: "Regular", price: 90 }
-    ]
-  },
-  {
-    id: 73,
-    name: "Cigar Roll",
-    category: "Spring Roll",
-    img: "/Images/Cigar-Roll.jpg",
-    description: "Thin cigar-shaped rolls with veg stuffing.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 74,
-    name: "Veg Steam Momos",
-    category: "Spring Roll",
-    img: "/Images/Veg-Steam-Momos.jpg",
-    description: "Steamed momos stuffed with vegetables.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 75,
-    name: "Paneer Steam Momos",
-    category: "Spring Roll",
-    img: "/Images/Paneer-Steam-Momos.jpg",
-    description: "Steamed momos filled with paneer.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 76,
-    name: "Veg Kurkure Momos",
-    category: "Spring Roll",
-    img: "/Images/Veg-Kurkure-Momos.jpg",
-    description: "Crispy kurkure-style veg momos.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 77,
-    name: "Veg Fry Momos",
-    category: "Spring Roll",
-    img: "/Images/Veg-Fry-Momos.jpg",
-    description: "Fried veg momos with crispy outer layer.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 78,
-    name: "Paneer Kurkure Momos",
-    category: "Spring Roll",
-    img: "/Images/Paneer-Kurkure-Momos.jpg",
-    description: "Crunchy paneer kurkure momos.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 79,
-    name: "Paneer Fry Momos",
-    category: "Spring Roll",
-    img: "/Images/Paneer-Fry-Momos.jpg",
-    description: "Fried paneer-stuffed momos.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 80,
-    name: "Salty Fries",
-    category: "Fries",
-    img: "/Images/Salty-Fries.jpg",
-    description: "Classic salted French fries.",
-    variants: [
-      { size: "Regular", price: 79 }
-    ]
-  },
-  {
-    id: 81,
-    name: "Masala Fries",
-    category: "Fries",
-    img: "/Images/Masala-Fries.jpg",
-    description: "Fries tossed in Indian masala spices.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 82,
-    name: "Peri Peri Fries",
-    category: "Fries",
-    img: "/Images/Peri-Peri-Fries.jpg",
-    description: "Fries coated with peri peri seasoning.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 83,
-    name: "Mix Loaded Fries",
-    category: "Fries",
-    img: "/Images/Mix-Loaded-Fries.jpg",
-    description: "Fries loaded with sauces and toppings.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 84,
-    name: "Veg Strips",
-    category: "Fries",
-    img: "/Images/Veg-Strips.jpg",
-    description: "Crispy fried veg strips.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 85,
-    name: "Cheese Shots",
-    category: "Fries",
-    img: "/Images/Cheese-Shots.jpg",
-    description: "Deep-fried cheese balls.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 172,
-    name: "Paneer Strips",
-    category: "Fries",
-    img: "/Images/Paneer-Strips.jpg",
-    description: "Crispy paneer finger strips.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 86,
-    name: "Veg Salad",
-    category: "Salad",
-    img: "/Images/Veg-Salad.jpg",
-    description: "Fresh mixed vegetable salad.",
-    variants: [
-      { size: "Regular", price: 90 }
-    ]
-  },
-  {
-    id: 87,
-    name: "Green Salad",
-    category: "Salad",
-    img: "/Images/Green-Salad.jpg",
-    description: "Healthy green vegetable salad.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 88,
-    name: "Russian Salad",
-    category: "Salad",
-    img: "/Images/Russian-Salad.jpg",
-    description: "Creamy Russian-style salad.",
-    variants: [
-      { size: "Regular", price: 160 }
-    ]
-  },
-  {
-    id: 89,
-    name: "Veg Saute With Brown Rice",
-    category: "Salad",
-    img: "/Images/Veg-Saute-With-Brown-Rice.jpg",
-    description: "Sauteed vegetables served with brown rice.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 90,
-    name: "Grilled Tofu Paneer Salad",
-    category: "Salad",
-    img: "/Images/Grilled-Tofu-Paneer-Salad.jpg",
-    description: "Grilled tofu & paneer with salad greens.",
-    variants: [
-      { size: "Regular", price: 190 }
-    ]
-  },
-  {
-    id: 91,
-    name: "High Protein Salad",
-    category: "Salad",
-    img: "/Images/High-Protein-Salad.jpg",
-    description: "Protein-rich healthy salad.",
-    variants: [
-      { size: "Regular", price: 230 }
-    ]
-  },
-  {
-    id: 92,
-    name: "Virgin Mojito",
-    category: "Mocktail",
-    img: "/Images/Virgin-Mojito.jpg",
-    description: "Classic mint lime mojito.",
-    variants: [
-      { size: "Regular", price: 99 }
-    ]
-  },
-  {
-    id: 93,
-    name: "Green Apple Mojito",
-    category: "Mocktail",
-    img: "/Images/Green-Apple-Mojito.jpg",
-    description: "Refreshing green apple mojito.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 94,
-    name: "Water Melon Mojito",
-    category: "Mocktail",
-    img: "/Images/Water-Melon-Mojito.jpg",
-    description: "Fresh watermelon mojito.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 95,
-    name: "Paan Shot Mojito",
-    category: "Mocktail",
-    img: "/Images/Paan-Shot-Mojito.jpg",
-    description: "Paan-flavoured mojito shot.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 96,
-    name: "Bubble Gum Mojito",
-    category: "Mocktail",
-    img: "/Images/Bubble-Gum-Mojito.jpg",
-    description: "Sweet bubble gum mojito.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 97,
-    name: "Black Tangy Mojito",
-    category: "Mocktail",
-    img: "/Images/Black-Tangy-Mojito.jpg",
-    description: "Tangy black-flavoured mojito.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 98,
-    name: "Vanilla Shake",
-    category: "Shakes",
-    img: "/Images/Vanilla-Shake.jpg",
-    description: "Classic vanilla milkshake made with milk and ice cream.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 99,
-    name: "Strawberry Shake",
-    category: "Shakes",
-    img: "/Images/Strawberry-Shake.jpg",
-    description: "Sweet strawberry flavoured milkshake.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 100,
-    name: "Butter Scotch Shake",
-    category: "Shakes",
-    img: "/Images/Butter-Scotch-Shake.jpg",
-    description: "Creamy butterscotch flavoured shake.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 101,
-    name: "Oreo Milk Shake",
-    category: "Shakes",
-    img: "/Images/Oreo-Milk-Shake.jpg",
-    description: "Thick shake blended with Oreo biscuits.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 102,
-    name: "Dairy Milk Shake",
-    category: "Shakes",
-    img: "/Images/Dairy-Milk-Shake.jpg",
-    description: "Chocolate shake made with Dairy Milk chocolate.",
-    variants: [
-      { size: "Regular", price: 140 }
-    ]
-  },
-  {
-    id: 103,
-    name: "Kit Kat Shake",
-    category: "Shakes",
-    img: "/Images/Kit-Kat-Shake.jpg",
-    description: "Rich milkshake blended with KitKat chocolate.",
-    variants: [
-      { size: "Regular", price: 140 }
-    ]
-  },
-  {
-    id: 104,
-    name: "Black Currant Shake",
-    category: "Shakes",
-    img: "/Images/Black-Currant-Shake.jpg",
-    description: "Fruity black currant flavoured milkshake.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 105,
-    name: "Bubble Gum Shake",
-    category: "Shakes",
-    img: "/Images/Bubble-Gum-Shake.jpg",
-    description: "Sweet bubble gum flavoured shake.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 106,
-    name: "Pineapple Shake",
-    category: "Shakes",
-    img: "/Images/Pineapple-Shake.jpg",
-    description: "Refreshing pineapple flavoured milkshake.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 107,
-    name: "Kiwi Shake",
-    category: "Shakes",
-    img: "/Images/Kiwi-Shake.jpg",
-    description: "Tangy kiwi flavoured milkshake.",
-    variants: [
-      { size: "Regular", price: 140 }
-    ]
-  },
-  {
-    id: 108,
-    name: "Cream Biscoff Shake",
-    category: "Shakes",
-    img: "/Images/Cream-Biscoff-Shake.jpg",
-    description: "Premium creamy shake made with Biscoff biscuits.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 109,
-    name: "Hot Coffee",
-    category: "Coffee",
-    img: "/Images/Hot-Coffee.jpg",
-    description: "Freshly brewed hot coffee.",
-    variants: [
-      { size: "Regular", price: 70 }
-    ]
-  },
-  {
-    id: 110,
-    name: "Hot Chocolate Coffee",
-    category: "Coffee",
-    img: "/Images/Hot-Chocolate-Coffee.jpg",
-    description: "Hot coffee mixed with chocolate flavour.",
-    variants: [
-      { size: "Regular", price: 80 }
-    ]
-  },
-  {
-    id: 111,
-    name: "Hot Caramel Coffee",
-    category: "Coffee",
-    img: "/Images/Hot-Caramel-Coffee.jpg",
-    description: "Hot coffee infused with caramel flavour.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 112,
-    name: "Black Hot Coffee",
-    category: "Coffee",
-    img: "/Images/Black-Hot-Coffee.jpg",
-    description: "Strong black coffee without milk.",
-    variants: [
-      { size: "Regular", price: 50 }
-    ]
-  },
-  {
-    id: 113,
-    name: "Butter Scotch Coffee",
-    category: "Coffee",
-    img: "/Images/Butter-Scotch-Coffee.jpg",
-    description: "Coffee blended with butterscotch flavour.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 114,
-    name: "Cold Coffee",
-    category: "Cold Coffee",
-    img: "/Images/Cold-Coffee.jpg",
-    description: "Chilled classic cold coffee.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 115,
-    name: "Choco Cold Coffee",
-    category: "Cold Coffee",
-    img: "/Images/Choco-Cold-Coffee.jpg",
-    description: "Cold coffee with chocolate flavour.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 116,
-    name: "Caramel Cold Coffee",
-    category: "Cold Coffee",
-    img: "/Images/Caramel-Cold-Coffee.jpg",
-    description: "Cold coffee blended with caramel syrup.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 117,
-    name: "Strong Cold Coffee",
-    category: "Cold Coffee",
-    img: "/Images/Strong-Cold-Coffee.jpg",
-    description: "Extra strong chilled coffee.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 118,
-    name: "Brownie Cold Coffee",
-    category: "Cold Coffee",
-    img: "/Images/Brownie-Cold-Coffee.jpg",
-    description: "Cold coffee topped with brownie flavour.",
-    variants: [
-      { size: "Regular", price: 130 }
-    ]
-  },
-  {
-    id: 119,
-    name: "Sesame Mushroom",
-    category: "Mushroom Dish",
-    img: "/Images/Sesame-Mushroom.jpg",
-    description: "Crispy mushrooms tossed in sesame-flavoured sauce.",
-    variants: [
-      { size: "Regular", price: 220 }
-    ]
-  },
-  {
-    id: 120,
-    name: "Dragon Mushroom",
-    category: "Mushroom Dish",
-    img: "/Images/Dragon-Mushroom.jpg",
-    description: "Spicy dragon-style mushrooms with bold sauces.",
-    variants: [
-      { size: "Regular", price: 220 }
-    ]
-  },
-  {
-    id: 121,
-    name: "Singapore Mushroom Chilli",
-    category: "Mushroom Dish",
-    img: "/Images/Singapore-Mushroom-Chilli.jpg",
-    description: "Singapore-style chilli mushroom with Indo-Chinese flavours.",
-    variants: [
-      { size: "Regular", price: 220 }
-    ]
-  },
-  {
-    id: 122,
-    name: "Chilli Mushroom",
-    category: "Mushroom Dish",
-    img: "/Images/Chilli-Mushroom.jpg",
-    description: "Classic chilli mushroom tossed with onion and capsicum.",
-    variants: [
-      { size: "Regular", price: 210 }
-    ]
-  },
-  {
-    id: 123,
-    name: "Mushroom Duplex",
-    category: "Mushroom Dish",
-    img: "/Images/Mushroom-Duplex.jpg",
-    description: "Double-style mushroom preparation with rich gravy.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 124,
-    name: "Mushroom Pakoda",
-    category: "Mushroom Dish",
-    img: "/Images/Mushroom-Pakoda.jpg",
-    description: "Deep-fried mushroom pakodas with crispy coating.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 125,
-    name: "Italian Lemon Paneer",
-    category: "Italian Dish",
-    img: "/Images/Italian-Lemon-Paneer.jpg",
-    description: "Lemon-flavoured paneer cooked in Italian herbs.",
-    variants: [
-      { size: "Regular", price: 230 }
-    ]
-  },
-  {
-    id: 126,
-    name: "Sesame Paneer",
-    category: "Italian Dish",
-    img: "/Images/Sesame-Paneer.jpg",
-    description: "Paneer tossed in sesame sauce with crunchy texture.",
-    variants: [
-      { size: "Regular", price: 240 }
-    ]
-  },
-  {
-    id: 127,
-    name: "Korean Super Crunchy Paneer",
-    category: "Italian Dish",
-    img: "/Images/Korean-Super-Crunchy-Paneer.jpg",
-    description: "Extra-crispy paneer with Korean-style seasoning.",
-    variants: [
-      { size: "Regular", price: 230 }
-    ]
-  },
-  {
-    id: 128,
-    name: "Dragon Chilli Paneer",
-    category: "Italian Dish",
-    img: "/Images/Dragon-Chilli-Paneer.jpg",
-    description: "Spicy dragon-style chilli paneer.",
-    variants: [
-      { size: "Regular", price: 250 }
-    ]
-  },
-  {
-    id: 129,
-    name: "Honey Chilli Paneer",
-    category: "Italian Dish",
-    img: "/Images/Honey-Chilli-Paneer.jpg",
-    description: "Sweet and spicy paneer tossed in honey chilli sauce.",
-    variants: [
-      { size: "Regular", price: 220 }
-    ]
-  },
-  {
-    id: 130,
-    name: "Chilli Paneer",
-    category: "Italian Dish",
-    img: "/Images/Chilli-Paneer.jpg",
-    description: "Classic chilli paneer with Indo-Chinese flavour.",
-    variants: [
-      { size: "Regular", price: 230 }
-    ]
-  },
-  {
-    id: 131,
-    name: "Amritsar Paneer Pakoda",
-    category: "Italian Dish",
-    img: "/Images/Amritsar-Paneer-Pakoda.jpg",
-    description: "Amritsari-style paneer pakodas, crispy and spiced.",
-    variants: [
-      { size: "Regular", price: 150 }
-    ]
-  },
-  {
-    id: 132,
-    name: "Paneer Stuff Pakoda",
-    category: "Italian Dish",
-    img: "/Images/Paneer-Stuff-Pakoda.jpg",
-    description: "Stuffed paneer pakodas with crunchy outer layer.",
-    variants: [
-      { size: "Regular", price: 180 }
-    ]
-  },
-  {
-    id: 133,
-    name: "Veg Manchow Soup",
-    category: "Soup",
-    img: "/Images/Veg-Manchow-Soup.jpg",
-    description: "Thick manchow soup with vegetables and garlic flavour.",
-    variants: [
-      { size: "Regular", price: 90 }
-    ]
-  },
-  {
-    id: 134,
-    name: "Sweet Corn Soup",
-    category: "Soup",
-    img: "/Images/Sweet-Corn-Soup.jpg",
-    description: "Mild sweet corn soup with vegetable bits.",
-    variants: [
-      { size: "Regular", price: 90 }
-    ]
-  },
-  {
-    id: 135,
-    name: "Lemon Coriander Soup",
-    category: "Soup",
-    img: "/Images/Lemon-Coriander-Soup.jpg",
-    description: "Light soup with lemon and coriander freshness.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 136,
-    name: "Veg Clear Soup",
-    category: "Soup",
-    img: "/Images/Veg-Clear-Soup.jpg",
-    description: "Clear vegetable soup with subtle seasoning.",
-    variants: [
-      { size: "Regular", price: 110 }
-    ]
-  },
-  {
-    id: 137,
-    name: "Manchurian Dry",
-    category: "Street Food",
-    img: "/Images/Manchurian-Dry.jpg",
-    description: "Deep-fried vegetable balls tossed in Indo-Chinese spices.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 138,
-    name: "Manchurian Gravy",
-    category: "Street Food",
-    img: "/Images/Manchurian-Gravy.jpg",
-    description: "Veg manchurian served in thick, spicy gravy.",
-    variants: [
-      { size: "Regular", price: 220 }
-    ]
-  },
-  {
-    id: 139,
-    name: "Mexican Veg Crispy",
-    category: "Street Food",
-    img: "/Images/Mexican-Veg-Crispy.jpg",
-    description: "Crispy fried vegetables with Mexican-style seasoning.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 140,
-    name: "Cauliflower 72",
-    category: "Street Food",
-    img: "/Images/Cauliflower-72.jpg",
-    description: "Crispy cauliflower tossed in tangy sauce.",
-    variants: [
-      { size: "Regular", price: 150 }
-    ]
-  },
-  {
-    id: 141,
-    name: "Honey Cauliflower",
-    category: "Street Food",
-    img: "/Images/Honey-Cauliflower.jpg",
-    description: "Fried cauliflower coated in sweet honey glaze.",
-    variants: [
-      { size: "Regular", price: 160 }
-    ]
-  },
-  {
-    id: 142,
-    name: "Baby Corn Crispy",
-    category: "Street Food",
-    img: "/Images/Baby-Corn-Crispy.jpg",
-    description: "Crispy fried baby corn with spices.",
-    variants: [
-      { size: "Regular", price: 180 }
-    ]
-  },
-  {
-    id: 143,
-    name: "Honey Chilli Potato",
-    category: "Street Food",
-    img: "/Images/Honey-Chilli-Potato.jpg",
-    description: "Fried potato fingers tossed in honey chilli sauce.",
-    variants: [
-      { size: "Regular", price: 180 }
-    ]
-  },
-  {
-    id: 144,
-    name: "American Chopsuey",
-    category: "Street Food",
-    img: "/Images/American-Chopsuey.jpg",
-    description: "Crispy noodles topped with sweet and tangy vegetable gravy.",
-    variants: [
-      { size: "Regular", price: 220 }
-    ]
-  },
-  {
-    id: 145,
-    name: "Regular Fried Rice",
-    category: "Fried Rice",
-    img: "/Images/Regular-Fried-Rice.jpg",
-    description: "Plain fried rice tossed with vegetables and seasoning.",
-    variants: [
-      { size: "Regular", price: 170 }
-    ]
-  },
-  {
-    id: 146,
-    name: "Singapore Fried Rice",
-    category: "Fried Rice",
-    img: "/Images/Singapore-Fried-Rice.jpg",
-    description: "Spicy Singapore-style fried rice with veggies.",
-    variants: [
-      { size: "Regular", price: 220 }
-    ]
-  },
-  {
-    id: 147,
-    name: "Chilli Garlic Fried Rice",
-    category: "Fried Rice",
-    img: "/Images/Chilli-Garlic-Fried-Rice.jpg",
-    description: "Fried rice flavoured with chilli and garlic.",
-    variants: [
-      { size: "Regular", price: 190 }
-    ]
-  },
-  {
-    id: 148,
-    name: "Sezwan Fried Rice",
-    category: "Fried Rice",
-    img: "/Images/Sezwan-Fried-Rice.jpg",
-    description: "Hot and spicy schezwan-style fried rice.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 149,
-    name: "Garlic Fried Rice",
-    category: "Fried Rice",
-    img: "/Images/Garlic-Fried-Rice.jpg",
-    description: "Aromatic fried rice with rich garlic flavour.",
-    variants: [
-      { size: "Regular", price: 190 }
-    ]
-  },
-  {
-    id: 150,
-    name: "New Vijay Bakery Special Atta Kulcha",
-    category: "Kulcha",
-    img: "/Images/Atta-Kulcha.jpg",
-    description: "Special atta kulcha prepared with house spices and butter.",
-    variants: [
-      { size: "Regular", price: 70 }
-    ]
-  },
-  {
-    id: 151,
-    name: "Churchur Kulcha",
-    category: "Kulcha",
-    img: "/Images/Churchur-Kulcha.jpg",
-    description: "Crispy layered churchur-style kulcha served hot.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 152,
-    name: "Batala Kulcha",
-    category: "Kulcha",
-    img: "/Images/Batala-Kulcha.jpg",
-    description: "Traditional Batala-style kulcha, bakery special.",
-    variants: [
-      { size: "Regular", price: 60 }
-    ]
-  },
-  {
-    id: 153,
-    name: "Mix Kulcha",
-    category: "Kulcha",
-    img: "/Images/Mix-Kulcha.jpg",
-    description: "Kulcha stuffed with mixed vegetable filling.",
-    variants: [
-      { size: "Regular", price: 70 }
-    ]
-  },
-  {
-    id: 154,
-    name: "Onion Kulcha",
-    category: "Kulcha",
-    img: "/Images/Onion-Kulcha.jpg",
-    description: "Kulcha stuffed with spiced onion filling.",
-    variants: [
-      { size: "Regular", price: 70 }
-    ]
-  },
-  {
-    id: 155,
-    name: "Kulcha Patty (Without Paneer)",
-    category: "Kulcha",
-    img: "/Images/Kulcha-Patty-Without-Paneer.jpg",
-    description: "Kulcha served with patty and curry, without paneer.",
-    variants: [
-      { size: "Regular", price: 100 }
-    ]
-  },
-  {
-    id: 156,
-    name: "Patty Paneer",
-    category: "Kulcha",
-    img: "/Images/Patty-Paneer-Kulcha.jpg",
-    description: "Paneer patty kulcha served with rich curry.",
-    variants: [
-      { size: "Regular", price: 140 }
-    ]
-  },
-  {
-    id: 157,
-    name: "Paneer Kulcha",
-    category: "Kulcha",
-    img: "/Images/Paneer-Kulcha.jpg",
-    description: "Kulcha stuffed with spiced paneer filling.",
-    variants: [
-      { size: "Regular", price: 90 }
-    ]
-  },
-  {
-    id: 158,
-    name: "Papad Kulcha",
-    category: "Kulcha",
-    img: "/Images/Papad-Kulcha.jpg",
-    description: "Crispy papad-stuffed kulcha with butter.",
-    variants: [
-      { size: "Regular", price: 80 }
-    ]
-  },
-  {
-    id: 159,
-    name: "Ginger Garlic Kulcha",
-    category: "Kulcha",
-    img: "/Images/Ginger-Garlic-Kulcha.jpg",
-    description: "Kulcha flavoured with ginger and garlic seasoning.",
-    variants: [
-      { size: "Regular", price: 70 }
-    ]
-  },
-  {
-    id: 160,
-    name: "Gobi Kulcha",
-    category: "Kulcha",
-    img: "/Images/Gobi-Kulcha.jpg",
-    description: "Kulcha stuffed with spiced cauliflower filling.",
-    variants: [
-      { size: "Regular", price: 80 }
-    ]
-  },
-  {
-    id: 161,
-    name: "Special Desi Ghee Wala Kulcha",
-    category: "Kulcha",
-    img: "/Images/Desi-Ghee-Wala-Kulcha.jpg",
-    description: "Kulcha roasted and topped generously with desi ghee.",
-    variants: [
-      { size: "Regular", price: 120 }
-    ]
-  },
-  {
-    id: 163,
-    name: "Fry Champ",
-    category: "Champ",
-    img: "/Images/Fry-Champ.jpg",
-    description: "Fried champ pieces tossed with spices and onions.",
-    variants: [
-      { size: "Regular", price: 150 }
-    ]
-  },
-  {
-    id: 164,
-    name: "Malai Champ",
-    category: "Champ",
-    img: "/Images/Malai-Champ.jpg",
-    description: "Creamy malai-based champ preparation.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 165,
-    name: "Gravy Champ",
-    category: "Champ",
-    img: "/Images/Gravy-Champ.jpg",
-    description: "Champ cooked in rich spiced gravy.",
-    variants: [
-      { size: "Regular", price: 220 }
-    ]
-  },
-  {
-    id: 166,
-    name: "Achari Champ",
-    category: "Champ",
-    img: "/Images/Achari-Champ.jpg",
-    description: "Tangy achari-flavoured champ dish.",
-    variants: [
-      { size: "Regular", price: 200 }
-    ]
-  },
-  {
-    id: 167,
-    name: "Manchurian Toast",
-    category: "Street Food",
-    img: "/Images/Manchurian-Toast.jpg",
-    description: "Crispy toast topped with veg manchurian gravy.",
-    variants: [
-      { size: "Regular", price: 230 }
-    ]
-  },
-  {
-    id: 168,
-    name: "Extra Cheese",
-    category: "Add-Ons",
-    img: "/Images/Extra-Cheese.jpg",
-    description: "Additional cheese topping to enhance flavour.",
-    variants: [
-      { size: "Medium", price: 50 },
-      { size: "Large", price: 80 }
-    ]
-  },
-  {
-    id: 169,
-    name: "Extra Topping",
-    category: "Add-Ons",
-    img: "/Images/Extra-Topping.jpg",
-    description: "Extra vegetable or topping addition.",
-    variants: [
-      { size: "Medium", price: 40 },
-      { size: "Large", price: 60 }
-    ]
-  },
-  {
-    id: 170,
-    name: "Cheese Burst",
-    category: "Add-Ons",
-    img: "/Images/Cheese-Burst.jpg",
-    description: "Cheese burst base for extra cheesy experience.",
-    variants: [
-      { size: "Medium", price: 70 },
-      { size: "Large", price: 120 }
-    ]
-  },
-  {
-    id: 171,
-    name: "Extra Dip",
-    category: "Add-Ons",
-    img: "/Images/Extra-Dip.jpg",
-    description: "Additional dip or sauce.",
-    variants: [
-      { size: "Regular", price: 20 }
-    ]
-  }
-];
-
 function getItemType(category) {
   if (category.toLowerCase().includes("non")) return "nonveg";
   return "veg";
@@ -1777,11 +23,62 @@ function getItemType(category) {
 export default function RestaurantMenu() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
+  const [menuItems, setMenuItems] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  // Fetch data when category changes
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        // If "All" is selected, we fetch the consolidated All.json
+        // Or we could implement a strategy to only load specific chunks.
+        // Given the requirement "menu data should load only when a category is selected",
+        // but "All" is the default. We created an 'All.json' for this purpose.
+
+        let url = "";
+        if (category === "All") {
+          url = "/data/All.json";
+        } else {
+          // Handle category name to filename conversion
+          // e.g., "Add-Ons" -> "Add_Ons.json"
+          const filename = category.replace(/[^a-z0-9]/gi, '_') + '.json';
+          url = `/data/${filename}`;
+        }
+
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`Failed to load data for ${category}`);
+        }
+        const data = await response.json();
+        setMenuItems(data);
+      } catch (err) {
+        console.error(err);
+        setError("Failed to load menu data. Please try again.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [category]);
+
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
 
+    // If we are in "All" view with All.json, we might still want to filter by category purely client-side
+    // if the user somehow switches category but we want to be safe, but actually
+    // the useEffect handles fetching the specific category data.
+    // So if category !== "All", menuItems ONLY contains that category's items already.
+    // So we primarily filter by query.
+
     let items = menuItems.filter((it) => {
+      // Double check category if we are in "All" mode just to be safe, 
+      // but actually if we fetched specific category, this check is redundant but harmless.
+      // If we fetched "All.json", it has everything.
       if (category !== "All" && it.category !== category) return false;
 
       if (
@@ -1795,7 +92,7 @@ export default function RestaurantMenu() {
     });
 
     return items;
-  }, [query, category]);
+  }, [query, category, menuItems]);
 
   return (
     <div
@@ -1811,6 +108,7 @@ export default function RestaurantMenu() {
             <img
               src="/Images/logo.png"
               alt="New Vijay Bakery"
+              loading="eager"
               className="w-10 sm:w-12 md:w-14 lg:w-16 aspect-square object-cover rounded-lg shadow-sm"
             />
           </div>
@@ -1844,7 +142,7 @@ export default function RestaurantMenu() {
 
         {/* SIDEBAR */}
         <aside
-          className="lg:col-span-1 p-5 rounded-2xl shadow-xl"
+          className="lg:col-span-1 p-5 rounded-2xl shadow-xl h-fit"
           style={{ backgroundColor: "#4e513c", color: "#ffd700" }}
         >
           {/* SEARCH */}
@@ -1888,99 +186,105 @@ export default function RestaurantMenu() {
 
         {/* MENU LIST */}
         <section className="lg:col-span-3">
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          {loading ? (
+            <div className="text-center py-12" style={GOLD_SOFT}>Loading menu...</div>
+          ) : error ? (
+            <div className="text-center py-12 text-red-400">{error}</div>
+          ) : filtered.length === 0 ? (
+            <div className="text-center py-12" style={GOLD_SOFT}>No items found.</div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+              {filtered.map((item) => (
+                <article
+                  key={item.id}
+                  className="rounded-2xl shadow-xl overflow-hidden transition"
+                  style={{ backgroundColor: "#4e513c" }}
+                >
+                  {/* IMAGE */}
+                  <div className="relative h-44 sm:h-56">
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
 
-            {/* LIST WITHOUT ANIMATION — FIXES iOS CRASH */}
-            {filtered.map((item) => (
-              <article
-                key={item.id}
-                className="rounded-2xl shadow-xl overflow-hidden transition"
-                style={{ backgroundColor: "#4e513c" }}
-              >
-                {/* IMAGE */}
-                <div className="relative h-44 sm:h-56">
-                  <img
-                    src={item.img}
-                    alt={item.name}
-                    className="w-full h-full object-cover"
-                  />
-
-                  <div
-                    className="absolute top-3 left-3 text-xs px-3 py-1 rounded-full"
-                    style={{
-                      backgroundColor: "rgba(0,0,0,0.4)",
-                      ...GOLD_SOFT
-                    }}
-                  >
-                    {item.category}
-                  </div>
-                </div>
-
-                {/* CONTENT */}
-                <div className="p-4">
-
-                  {/* NAME + DOT */}
-                  <div className="flex items-center justify-between">
-
-                    <h3 className="font-semibold text-lg" style={GOLD_GRADIENT}>
-                      {item.name}
-                    </h3>
-
-                    {/* Only show dot if type exists */}
-                    {item.type && (
-                      <span
-                        style={{
-                          width: "12px",
-                          height: "12px",
-                          borderRadius: "50%",
-                          backgroundColor:
-                            item.type === "veg" ? "#0f8a0f" : "#c40000",
-                          border: "2px solid #ffd700",
-                          display: "inline-block",
-                          marginLeft: "8px",
-                          boxShadow: "0 0 6px rgba(255,215,0,0.4)"
-                        }}
-                      />
-                    )}
-                  </div>
-
-                  {/* DESCRIPTION */}
-                  {item.description && (
-                    <p
-                      className="text-sm mt-1 leading-snug"
-                      style={{ ...GOLD_SOFT, opacity: 0.8 }}
-                    >
-                      {item.description}
-                    </p>
-                  )}
-
-                  {/* VARIANTS */}
-                  {item.variants && (
                     <div
-                      className="mt-3 p-3 rounded-lg text-sm"
+                      className="absolute top-3 left-3 text-xs px-3 py-1 rounded-full"
                       style={{
-                        backgroundColor: "rgba(255, 215, 0, 0.08)",
-                        border: "1px solid rgba(255,215,0,0.3)",
-                        color: "#ffd700"
+                        backgroundColor: "rgba(0,0,0,0.4)",
+                        ...GOLD_SOFT
                       }}
                     >
-                      {item.variants.map((v, i) => (
-                        <div
-                          key={i}
-                          className="flex justify-between py-1 border-b last:border-none"
-                          style={{ borderColor: "rgba(255,215,0,0.2)" }}
-                        >
-                          <span>{v.size}</span>
-                          <span>₹{v.price}</span>
-                        </div>
-                      ))}
+                      {item.category}
                     </div>
-                  )}
-                </div>
-              </article>
-            ))}
+                  </div>
 
-          </div>
+                  {/* CONTENT */}
+                  <div className="p-4">
+
+                    {/* NAME + DOT */}
+                    <div className="flex items-center justify-between">
+
+                      <h3 className="font-semibold text-lg" style={GOLD_GRADIENT}>
+                        {item.name}
+                      </h3>
+
+                      {/* Only show dot if type exists */}
+                      {item.type && (
+                        <span
+                          style={{
+                            width: "12px",
+                            height: "12px",
+                            borderRadius: "50%",
+                            backgroundColor:
+                              item.type === "veg" ? "#0f8a0f" : "#c40000",
+                            border: "2px solid #ffd700",
+                            display: "inline-block",
+                            marginLeft: "8px",
+                            boxShadow: "0 0 6px rgba(255,215,0,0.4)"
+                          }}
+                        />
+                      )}
+                    </div>
+
+                    {/* DESCRIPTION */}
+                    {item.description && (
+                      <p
+                        className="text-sm mt-1 leading-snug"
+                        style={{ ...GOLD_SOFT, opacity: 0.8 }}
+                      >
+                        {item.description}
+                      </p>
+                    )}
+
+                    {/* VARIANTS */}
+                    {item.variants && (
+                      <div
+                        className="mt-3 p-3 rounded-lg text-sm"
+                        style={{
+                          backgroundColor: "rgba(255, 215, 0, 0.08)",
+                          border: "1px solid rgba(255,215,0,0.3)",
+                          color: "#ffd700"
+                        }}
+                      >
+                        {item.variants.map((v, i) => (
+                          <div
+                            key={i}
+                            className="flex justify-between py-1 border-b last:border-none"
+                            style={{ borderColor: "rgba(255,215,0,0.2)" }}
+                          >
+                            <span>{v.size}</span>
+                            <span>₹{v.price}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
         </section>
       </main>
 

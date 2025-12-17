@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita Pizza",
+    "category": "Deluxe Pizza",
+    "img": "/Images/Margherita-Pizza.jpg",
+    "description": "Classic pizza topped with rich mozzarella cheese on a soft, crispy base.",
+    "variants": [
+      {
+        "size": "Small",
+        "price": 99
+      },
+      {
+        "size": "Medium",
+        "price": 250
+      },
+      {
+        "size": "Large",
+        "price": 300
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cheese Corn Pizza",
+    "category": "Deluxe Pizza",
+    "img": "/Images/Cheese-Corn-Pizza.jpg",
+    "description": "Loaded with sweet corn and melted cheese for a creamy bite.",
+    "variants": [
+      {
+        "size": "Small",
+        "price": 99
+      },
+      {
+        "size": "Medium",
+        "price": 250
+      },
+      {
+        "size": "Large",
+        "price": 300
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Onion Paneer Pizza",
+    "category": "Deluxe Pizza",
+    "img": "/Images/Onion-Paneer-Pizza.jpg",
+    "description": "Fresh onions and soft paneer cubes on a cheesy pizza base.",
+    "variants": [
+      {
+        "size": "Small",
+        "price": 99
+      },
+      {
+        "size": "Medium",
+        "price": 250
+      },
+      {
+        "size": "Large",
+        "price": 300
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Onion Capsicum Pizza",
+    "category": "Deluxe Pizza",
+    "img": "/Images/Onion-Capsicum-Pizza.jpg",
+    "description": "Crunchy onions and capsicum layered with mozzarella cheese.",
+    "variants": [
+      {
+        "size": "Small",
+        "price": 99
+      },
+      {
+        "size": "Medium",
+        "price": 250
+      },
+      {
+        "size": "Large",
+        "price": 300
+      }
+    ]
+  }
+]

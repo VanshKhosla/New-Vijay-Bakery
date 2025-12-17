@@ -1,0 +1,80 @@
+[
+  {
+    "id": 92,
+    "name": "Virgin Mojito",
+    "category": "Mocktail",
+    "img": "/Images/Virgin-Mojito.jpg",
+    "description": "Classic mint lime mojito.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 99
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Green Apple Mojito",
+    "category": "Mocktail",
+    "img": "/Images/Green-Apple-Mojito.jpg",
+    "description": "Refreshing green apple mojito.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Water Melon Mojito",
+    "category": "Mocktail",
+    "img": "/Images/Water-Melon-Mojito.jpg",
+    "description": "Fresh watermelon mojito.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Paan Shot Mojito",
+    "category": "Mocktail",
+    "img": "/Images/Paan-Shot-Mojito.jpg",
+    "description": "Paan-flavoured mojito shot.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Bubble Gum Mojito",
+    "category": "Mocktail",
+    "img": "/Images/Bubble-Gum-Mojito.jpg",
+    "description": "Sweet bubble gum mojito.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Black Tangy Mojito",
+    "category": "Mocktail",
+    "img": "/Images/Black-Tangy-Mojito.jpg",
+    "description": "Tangy black-flavoured mojito.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  }
+]

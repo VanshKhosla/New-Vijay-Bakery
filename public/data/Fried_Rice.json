@@ -1,0 +1,67 @@
+[
+  {
+    "id": 145,
+    "name": "Regular Fried Rice",
+    "category": "Fried Rice",
+    "img": "/Images/Regular-Fried-Rice.jpg",
+    "description": "Plain fried rice tossed with vegetables and seasoning.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 170
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Singapore Fried Rice",
+    "category": "Fried Rice",
+    "img": "/Images/Singapore-Fried-Rice.jpg",
+    "description": "Spicy Singapore-style fried rice with veggies.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 220
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Chilli Garlic Fried Rice",
+    "category": "Fried Rice",
+    "img": "/Images/Chilli-Garlic-Fried-Rice.jpg",
+    "description": "Fried rice flavoured with chilli and garlic.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 190
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Sezwan Fried Rice",
+    "category": "Fried Rice",
+    "img": "/Images/Sezwan-Fried-Rice.jpg",
+    "description": "Hot and spicy schezwan-style fried rice.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Garlic Fried Rice",
+    "category": "Fried Rice",
+    "img": "/Images/Garlic-Fried-Rice.jpg",
+    "description": "Aromatic fried rice with rich garlic flavour.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 190
+      }
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "id": 80,
+    "name": "Salty Fries",
+    "category": "Fries",
+    "img": "/Images/Salty-Fries.jpg",
+    "description": "Classic salted French fries.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 79
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Masala Fries",
+    "category": "Fries",
+    "img": "/Images/Masala-Fries.jpg",
+    "description": "Fries tossed in Indian masala spices.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Peri Peri Fries",
+    "category": "Fries",
+    "img": "/Images/Peri-Peri-Fries.jpg",
+    "description": "Fries coated with peri peri seasoning.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Mix Loaded Fries",
+    "category": "Fries",
+    "img": "/Images/Mix-Loaded-Fries.jpg",
+    "description": "Fries loaded with sauces and toppings.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Veg Strips",
+    "category": "Fries",
+    "img": "/Images/Veg-Strips.jpg",
+    "description": "Crispy fried veg strips.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Cheese Shots",
+    "category": "Fries",
+    "img": "/Images/Cheese-Shots.jpg",
+    "description": "Deep-fried cheese balls.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "name": "Paneer Strips",
+    "category": "Fries",
+    "img": "/Images/Paneer-Strips.jpg",
+    "description": "Crispy paneer finger strips.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  }
+]

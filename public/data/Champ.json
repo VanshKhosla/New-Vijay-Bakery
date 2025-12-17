@@ -1,0 +1,54 @@
+[
+  {
+    "id": 163,
+    "name": "Fry Champ",
+    "category": "Champ",
+    "img": "/Images/Fry-Champ.jpg",
+    "description": "Fried champ pieces tossed with spices and onions.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "name": "Malai Champ",
+    "category": "Champ",
+    "img": "/Images/Malai-Champ.jpg",
+    "description": "Creamy malai-based champ preparation.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Gravy Champ",
+    "category": "Champ",
+    "img": "/Images/Gravy-Champ.jpg",
+    "description": "Champ cooked in rich spiced gravy.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 220
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Achari Champ",
+    "category": "Champ",
+    "img": "/Images/Achari-Champ.jpg",
+    "description": "Tangy achari-flavoured champ dish.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  }
+]

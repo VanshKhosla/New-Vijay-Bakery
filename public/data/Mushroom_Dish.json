@@ -1,0 +1,80 @@
+[
+  {
+    "id": 119,
+    "name": "Sesame Mushroom",
+    "category": "Mushroom Dish",
+    "img": "/Images/Sesame-Mushroom.jpg",
+    "description": "Crispy mushrooms tossed in sesame-flavoured sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 220
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Dragon Mushroom",
+    "category": "Mushroom Dish",
+    "img": "/Images/Dragon-Mushroom.jpg",
+    "description": "Spicy dragon-style mushrooms with bold sauces.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 220
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Singapore Mushroom Chilli",
+    "category": "Mushroom Dish",
+    "img": "/Images/Singapore-Mushroom-Chilli.jpg",
+    "description": "Singapore-style chilli mushroom with Indo-Chinese flavours.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 220
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Chilli Mushroom",
+    "category": "Mushroom Dish",
+    "img": "/Images/Chilli-Mushroom.jpg",
+    "description": "Classic chilli mushroom tossed with onion and capsicum.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 210
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Mushroom Duplex",
+    "category": "Mushroom Dish",
+    "img": "/Images/Mushroom-Duplex.jpg",
+    "description": "Double-style mushroom preparation with rich gravy.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Mushroom Pakoda",
+    "category": "Mushroom Dish",
+    "img": "/Images/Mushroom-Pakoda.jpg",
+    "description": "Deep-fried mushroom pakodas with crispy coating.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 168,
+    "name": "Extra Cheese",
+    "category": "Add-Ons",
+    "img": "/Images/Extra-Cheese.jpg",
+    "description": "Additional cheese topping to enhance flavour.",
+    "variants": [
+      {
+        "size": "Medium",
+        "price": 50
+      },
+      {
+        "size": "Large",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Extra Topping",
+    "category": "Add-Ons",
+    "img": "/Images/Extra-Topping.jpg",
+    "description": "Extra vegetable or topping addition.",
+    "variants": [
+      {
+        "size": "Medium",
+        "price": 40
+      },
+      {
+        "size": "Large",
+        "price": 60
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Cheese Burst",
+    "category": "Add-Ons",
+    "img": "/Images/Cheese-Burst.jpg",
+    "description": "Cheese burst base for extra cheesy experience.",
+    "variants": [
+      {
+        "size": "Medium",
+        "price": 70
+      },
+      {
+        "size": "Large",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Extra Dip",
+    "category": "Add-Ons",
+    "img": "/Images/Extra-Dip.jpg",
+    "description": "Additional dip or sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 20
+      }
+    ]
+  }
+]

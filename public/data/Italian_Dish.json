@@ -1,0 +1,106 @@
+[
+  {
+    "id": 125,
+    "name": "Italian Lemon Paneer",
+    "category": "Italian Dish",
+    "img": "/Images/Italian-Lemon-Paneer.jpg",
+    "description": "Lemon-flavoured paneer cooked in Italian herbs.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 230
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Sesame Paneer",
+    "category": "Italian Dish",
+    "img": "/Images/Sesame-Paneer.jpg",
+    "description": "Paneer tossed in sesame sauce with crunchy texture.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 240
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Korean Super Crunchy Paneer",
+    "category": "Italian Dish",
+    "img": "/Images/Korean-Super-Crunchy-Paneer.jpg",
+    "description": "Extra-crispy paneer with Korean-style seasoning.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 230
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Dragon Chilli Paneer",
+    "category": "Italian Dish",
+    "img": "/Images/Dragon-Chilli-Paneer.jpg",
+    "description": "Spicy dragon-style chilli paneer.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 250
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Honey Chilli Paneer",
+    "category": "Italian Dish",
+    "img": "/Images/Honey-Chilli-Paneer.jpg",
+    "description": "Sweet and spicy paneer tossed in honey chilli sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 220
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Chilli Paneer",
+    "category": "Italian Dish",
+    "img": "/Images/Chilli-Paneer.jpg",
+    "description": "Classic chilli paneer with Indo-Chinese flavour.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 230
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Amritsar Paneer Pakoda",
+    "category": "Italian Dish",
+    "img": "/Images/Amritsar-Paneer-Pakoda.jpg",
+    "description": "Amritsari-style paneer pakodas, crispy and spiced.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Paneer Stuff Pakoda",
+    "category": "Italian Dish",
+    "img": "/Images/Paneer-Stuff-Pakoda.jpg",
+    "description": "Stuffed paneer pakodas with crunchy outer layer.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 180
+      }
+    ]
+  }
+]

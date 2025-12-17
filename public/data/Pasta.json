@@ -1,0 +1,93 @@
+[
+  {
+    "id": 52,
+    "name": "Red Sauce Pasta",
+    "category": "Pasta",
+    "img": "/Images/Red-Sauce-Pasta.jpg",
+    "description": "Pasta cooked in tangy tomato-based red sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "White Sauce Pasta",
+    "category": "Pasta",
+    "img": "/Images/White-Sauce-Pasta.jpg",
+    "description": "Creamy white sauce pasta with mild seasoning.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Tandoori Tange Pasta",
+    "category": "Pasta",
+    "img": "/Images/Tandoori-Tange-Pasta.jpg",
+    "description": "Tandoori-flavoured pasta with smoky Indian spices.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Makhni Paneer Pasta",
+    "category": "Pasta",
+    "img": "/Images/Makhni-Paneer-Pasta.jpg",
+    "description": "Rich makhni sauce pasta with paneer cubes.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 150
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Pink Sauce Pasta",
+    "category": "Pasta",
+    "img": "/Images/Pink-Sauce-Pasta.jpg",
+    "description": "Perfect blend of red and white sauce in creamy pasta.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 170
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Veg Italian Pasta",
+    "category": "Pasta",
+    "img": "/Images/Veg-Italian-Pasta.jpg",
+    "description": "Italian-style pasta tossed with vegetables and herbs.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Green Pasta",
+    "category": "Pasta",
+    "img": "/Images/Green-Pasta.jpg",
+    "description": "Pasta cooked in fresh green herb-based sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 190
+      }
+    ]
+  }
+]

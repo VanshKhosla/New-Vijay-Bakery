@@ -1,0 +1,67 @@
+[
+  {
+    "id": 109,
+    "name": "Hot Coffee",
+    "category": "Coffee",
+    "img": "/Images/Hot-Coffee.jpg",
+    "description": "Freshly brewed hot coffee.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 70
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Hot Chocolate Coffee",
+    "category": "Coffee",
+    "img": "/Images/Hot-Chocolate-Coffee.jpg",
+    "description": "Hot coffee mixed with chocolate flavour.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Hot Caramel Coffee",
+    "category": "Coffee",
+    "img": "/Images/Hot-Caramel-Coffee.jpg",
+    "description": "Hot coffee infused with caramel flavour.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Black Hot Coffee",
+    "category": "Coffee",
+    "img": "/Images/Black-Hot-Coffee.jpg",
+    "description": "Strong black coffee without milk.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Butter Scotch Coffee",
+    "category": "Coffee",
+    "img": "/Images/Butter-Scotch-Coffee.jpg",
+    "description": "Coffee blended with butterscotch flavour.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  }
+]

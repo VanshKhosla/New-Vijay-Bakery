@@ -1,0 +1,67 @@
+[
+  {
+    "id": 59,
+    "name": "Round Cheese Bread",
+    "category": "Garlic Bread",
+    "img": "/Images/Round-Cheese-Bread.jpg",
+    "description": "Round bread topped with cheese and garlic butter.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Cheese Corn Bread",
+    "category": "Garlic Bread",
+    "img": "/Images/Cheese-Corn-Bread.jpg",
+    "description": "Garlic bread topped with cheese and sweet corn.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 90
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Stuffed Garlic Bread",
+    "category": "Garlic Bread",
+    "img": "/Images/Stuffed-Garlic-Bread.jpg",
+    "description": "Garlic bread stuffed with cheesy filling.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Italian Garlic Bread",
+    "category": "Garlic Bread",
+    "img": "/Images/Italian-Garlic-Bread.jpg",
+    "description": "Italian-style garlic bread with herbs.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Calzone",
+    "category": "Garlic Bread",
+    "img": "/Images/Calzone.jpg",
+    "description": "Folded pizza-style bread stuffed with cheese and veggies.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  }
+]

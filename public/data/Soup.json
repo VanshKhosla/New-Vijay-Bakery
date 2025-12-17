@@ -1,0 +1,54 @@
+[
+  {
+    "id": 133,
+    "name": "Veg Manchow Soup",
+    "category": "Soup",
+    "img": "/Images/Veg-Manchow-Soup.jpg",
+    "description": "Thick manchow soup with vegetables and garlic flavour.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 90
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Sweet Corn Soup",
+    "category": "Soup",
+    "img": "/Images/Sweet-Corn-Soup.jpg",
+    "description": "Mild sweet corn soup with vegetable bits.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 90
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Lemon Coriander Soup",
+    "category": "Soup",
+    "img": "/Images/Lemon-Coriander-Soup.jpg",
+    "description": "Light soup with lemon and coriander freshness.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Veg Clear Soup",
+    "category": "Soup",
+    "img": "/Images/Veg-Clear-Soup.jpg",
+    "description": "Clear vegetable soup with subtle seasoning.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 110
+      }
+    ]
+  }
+]

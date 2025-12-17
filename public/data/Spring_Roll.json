@@ -1,0 +1,106 @@
+[
+  {
+    "id": 72,
+    "name": "Spring Roll",
+    "category": "Spring Roll",
+    "img": "/Images/Spring-Roll.jpg",
+    "description": "Crispy fried vegetable spring rolls.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 90
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Cigar Roll",
+    "category": "Spring Roll",
+    "img": "/Images/Cigar-Roll.jpg",
+    "description": "Thin cigar-shaped rolls with veg stuffing.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Veg Steam Momos",
+    "category": "Spring Roll",
+    "img": "/Images/Veg-Steam-Momos.jpg",
+    "description": "Steamed momos stuffed with vegetables.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Paneer Steam Momos",
+    "category": "Spring Roll",
+    "img": "/Images/Paneer-Steam-Momos.jpg",
+    "description": "Steamed momos filled with paneer.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Veg Kurkure Momos",
+    "category": "Spring Roll",
+    "img": "/Images/Veg-Kurkure-Momos.jpg",
+    "description": "Crispy kurkure-style veg momos.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Veg Fry Momos",
+    "category": "Spring Roll",
+    "img": "/Images/Veg-Fry-Momos.jpg",
+    "description": "Fried veg momos with crispy outer layer.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Paneer Kurkure Momos",
+    "category": "Spring Roll",
+    "img": "/Images/Paneer-Kurkure-Momos.jpg",
+    "description": "Crunchy paneer kurkure momos.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Paneer Fry Momos",
+    "category": "Spring Roll",
+    "img": "/Images/Paneer-Fry-Momos.jpg",
+    "description": "Fried paneer-stuffed momos.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 130
+      }
+    ]
+  }
+]

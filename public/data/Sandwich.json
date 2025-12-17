@@ -1,0 +1,106 @@
+[
+  {
+    "id": 28,
+    "name": "Veg Grilled Sandwich",
+    "category": "Sandwich",
+    "img": "/Images/Veg-Grilled-Sandwich.jpg",
+    "description": "Grilled sandwich stuffed with fresh vegetables and butter.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Cheese Grilled Sandwich",
+    "category": "Sandwich",
+    "img": "/Images/Cheese-Grilled-Sandwich.jpg",
+    "description": "Classic grilled sandwich loaded with melted cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Kadai Paneer Sandwich",
+    "category": "Sandwich",
+    "img": "/Images/Kadai-Paneer-Sandwich.jpg",
+    "description": "Spicy kadai paneer filling with grilled bread.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Seven Onion Sandwich",
+    "category": "Sandwich",
+    "img": "/Images/Seven-Onion-Sandwich.jpg",
+    "description": "Onion-loaded sandwich with light spices and butter.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 80
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Paneer Takatak Sandwich",
+    "category": "Sandwich",
+    "img": "/Images/Paneer-Takatak-Sandwich.jpg",
+    "description": "Tangy paneer takatak masala with grilled bread.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Gym Diet Sandwich",
+    "category": "Sandwich",
+    "img": "/Images/Gym-Diet-Sandwich.jpg",
+    "description": "Healthy sandwich with low oil, veggies and paneer.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Triple Layer Sandwich",
+    "category": "Sandwich",
+    "img": "/Images/Triple-Layer-Sandwich.jpg",
+    "description": "Three-layer sandwich packed with veggies and cheese.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 140
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Tandoori Tiyani Sandwich",
+    "category": "Sandwich",
+    "img": "/Images/Tandoori-Tiyani-Sandwich.jpg",
+    "description": "Tandoori-flavoured filling with grilled bread slices.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  }
+]

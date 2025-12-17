@@ -1,0 +1,106 @@
+[
+  {
+    "id": 64,
+    "name": "Regular Noodles",
+    "category": "Noodles",
+    "img": "/Images/Regular-Noodles.jpg",
+    "description": "Simple stir-fried noodles with vegetables.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Singapore Noodles",
+    "category": "Noodles",
+    "img": "/Images/Singapore-Noodles.jpg",
+    "description": "Spicy Singapore-style noodles.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 190
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Hakka Noodles",
+    "category": "Noodles",
+    "img": "/Images/Hakka-Noodles.jpg",
+    "description": "Indo-Chinese hakka noodles with veggies.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 190
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Sezwan Noodles",
+    "category": "Noodles",
+    "img": "/Images/Sezwan-Noodles.jpg",
+    "description": "Hot and spicy schezwan noodles.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Chilli Garlic Noodles",
+    "category": "Noodles",
+    "img": "/Images/Chilli-Garlic-Noodles.jpg",
+    "description": "Noodles tossed in chilli garlic sauce.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 200
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Garlic Noodles",
+    "category": "Noodles",
+    "img": "/Images/Garlic-Noodles.jpg",
+    "description": "Strong garlic-flavoured noodles.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 220
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Dragon Noodles",
+    "category": "Noodles",
+    "img": "/Images/Dragon-Noodles.jpg",
+    "description": "Spicy dragon-style noodles with bold flavours.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 230
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "New Vijay Bakery Special Thukpa",
+    "category": "Noodles",
+    "img": "/Images/New-Vijay-Bakery-Special-Thukpa.jpg",
+    "description": "House special thukpa noodles with rich broth.",
+    "variants": [
+      {
+        "size": "Regular",
+        "price": 250
+      }
+    ]
+  }
+]

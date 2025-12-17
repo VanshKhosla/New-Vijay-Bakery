@@ -23,37 +23,20 @@ function getItemType(category) {
 export default function RestaurantMenu() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
-  const [menuItems, setMenuItems] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [allMenuItems, setAllMenuItems] = useState([]); // Stores all items
+  const [loading, setLoading] = useState(true); // Start true as we fetch immediately
   const [error, setError] = useState(null);
 
-  // Fetch data when category changes
+  // Single-Fetch: Load All.json ONE time on mount
   useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      setError(null);
+    const fetchAllData = async () => {
       try {
-        // If "All" is selected, we fetch the consolidated All.json
-        // Or we could implement a strategy to only load specific chunks.
-        // Given the requirement "menu data should load only when a category is selected",
-        // but "All" is the default. We created an 'All.json' for this purpose.
-
-        let url = "";
-        if (category === "All") {
-          url = "/data/All.json";
-        } else {
-          // Handle category name to filename conversion
-          // e.g., "Add-Ons" -> "Add_Ons.json"
-          const filename = category.replace(/[^a-z0-9]/gi, '_') + '.json';
-          url = `/data/${filename}`;
-        }
-
-        const response = await fetch(url);
+        const response = await fetch("/data/All.json");
         if (!response.ok) {
-          throw new Error(`Failed to load data for ${category}`);
+          throw new Error("Failed to load menu data");
         }
         const data = await response.json();
-        setMenuItems(data);
+        setAllMenuItems(data);
       } catch (err) {
         console.error(err);
         setError("Failed to load menu data. Please try again.");
@@ -62,37 +45,30 @@ export default function RestaurantMenu() {
       }
     };
 
-    fetchData();
-  }, [category]);
+    fetchAllData();
+  }, []); // Empty dependency array = runs once
 
-
+  // Client-Side Instant Filtering (0ms)
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
 
-    // If we are in "All" view with All.json, we might still want to filter by category purely client-side
-    // if the user somehow switches category but we want to be safe, but actually
-    // the useEffect handles fetching the specific category data.
-    // So if category !== "All", menuItems ONLY contains that category's items already.
-    // So we primarily filter by query.
-
-    let items = menuItems.filter((it) => {
-      // Double check category if we are in "All" mode just to be safe, 
-      // but actually if we fetched specific category, this check is redundant but harmless.
-      // If we fetched "All.json", it has everything.
-      if (category !== "All" && it.category !== category) return false;
-
-      if (
-        q &&
-        !(it.name.toLowerCase().includes(q) ||
-          it.description.toLowerCase().includes(q))
-      )
+    return allMenuItems.filter((item) => {
+      // 1. Filter by Category (if not "All")
+      if (category !== "All" && item.category !== category) {
         return false;
+      }
+
+      // 2. Filter by Search Query
+      if (q && !(
+        item.name.toLowerCase().includes(q) ||
+        (item.description && item.description.toLowerCase().includes(q))
+      )) {
+        return false;
+      }
 
       return true;
     });
-
-    return items;
-  }, [query, category, menuItems]);
+  }, [query, category, allMenuItems]);
 
   return (
     <div

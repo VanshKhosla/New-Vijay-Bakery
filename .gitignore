@@ -115,3 +115,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Backup folder since we don't want to push large duplicate images
+public/Images/_backup/

@@ -38,20 +38,7 @@
       }
     ]
   },
-  {
-    "id": 31,
-    "name": "Seven Onion Sandwich",
-    "category": "Sandwich",
-    "img": "/Images/Seven-Onion-Sandwich.jpg",
-    "description": "Onion-loaded sandwich with light spices and butter.",
-    "variants": [
-      {
-        "size": "Regular",
-        "price": 80
-      }
-    ]
-  },
-  {
+   {
     "id": 32,
     "name": "Paneer Takatak Sandwich",
     "category": "Sandwich",
@@ -92,7 +79,7 @@
   },
   {
     "id": 35,
-    "name": "Tandoori Tiyani Sandwich",
+    "name": "Tandoori Tangy Sandwich",
     "category": "Sandwich",
     "img": "/Images/Tandoori-Tiyani-Sandwich.jpg",
     "description": "Tandoori-flavoured filling with grilled bread slices.",

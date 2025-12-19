@@ -82,7 +82,7 @@ export default function RestaurantMenu() {
           {/* LEFT: LOGO / ARTWORK */}
           <div className="flex-shrink-0">
             <img
-              src="/Images/logo.png"
+              src="/Images/logo.webp"
               alt="New Vijay Bakery"
               loading="eager"
               className="w-10 sm:w-12 md:w-14 lg:w-16 aspect-square object-cover rounded-lg shadow-sm"
@@ -264,11 +264,51 @@ export default function RestaurantMenu() {
         </section>
       </main>
 
-      <footer
-        className="max-w-6xl mx-auto mt-12 text-center text-sm"
-        style={{ color: "#ffd700" }}
-      >
-        © NEW VIJAY BAKERY — Built with ❤️
+      <footer className="max-w-6xl mx-auto mt-12 text-center">
+        {/* INSTAGRAM SECTION */}
+        <div className="flex flex-col items-center justify-center gap-4 mb-8">
+          <a
+            href="https://www.instagram.com/newvijaybakery/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center gap-3 transition-transform hover:scale-105"
+          >
+            {/* QR CODE */}
+            <div className="p-2 bg-white rounded-xl shadow-lg">
+              <img
+                src="/Images/insta-qr.webp"
+                alt="Instagram QR Code"
+                className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                loading="lazy"
+              />
+            </div>
+
+            {/* CTA + LOGO */}
+            <div className="flex items-center gap-2 text-[#E1306C] font-semibold bg-white/10 px-4 py-2 rounded-full border border-white/10 hover:bg-white/20 transition">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-instagram"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Follow us on Instagram</span>
+            </div>
+          </a>
+        </div>
+
+        <div className="text-sm" style={{ color: "#ffd700" }}>
+          © NEW VIJAY BAKERY — Built with ❤️
+        </div>
       </footer>
     </div>
   );

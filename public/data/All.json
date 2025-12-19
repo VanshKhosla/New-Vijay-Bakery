@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Margherita Pizza",
     "category": "Deluxe Pizza",
-    "img": "/Images/Margherita-Pizza.jpg",
+    "img": "/Images/Margherita-Pizza.webp",
     "description": "Classic pizza topped with rich mozzarella cheese on a soft, crispy base.",
     "variants": [
       {
@@ -24,7 +24,7 @@
     "id": 2,
     "name": "Cheese Corn Pizza",
     "category": "Deluxe Pizza",
-    "img": "/Images/Cheese-Corn-Pizza.jpg",
+    "img": "/Images/Cheese-Corn-Pizza.webp",
     "description": "Loaded with sweet corn and melted cheese for a creamy bite.",
     "variants": [
       {
@@ -45,7 +45,7 @@
     "id": 3,
     "name": "Onion Paneer Pizza",
     "category": "Deluxe Pizza",
-    "img": "/Images/Onion-Paneer-Pizza.jpg",
+    "img": "/Images/Onion-Paneer-Pizza.webp",
     "description": "Fresh onions and soft paneer cubes on a cheesy pizza base.",
     "variants": [
       {
@@ -66,7 +66,7 @@
     "id": 4,
     "name": "Onion Capsicum Pizza",
     "category": "Deluxe Pizza",
-    "img": "/Images/Onion-Capsicum-Pizza.jpg",
+    "img": "/Images/Onion-Capsicum-Pizza.webp",
     "description": "Crunchy onions and capsicum layered with mozzarella cheese.",
     "variants": [
       {
@@ -87,7 +87,7 @@
     "id": 5,
     "name": "Veggie Paradise",
     "category": "Pizza",
-    "img": "/Images/Veggie-Paradise.jpg",
+    "img": "/Images/Veggie-Paradise.webp",
     "description": "Onion, capsicum, jalapeno, tomato topped veggie delight.",
     "variants": [
       {
@@ -108,7 +108,7 @@
     "id": 6,
     "name": "Pappy Paneer",
     "category": "Pizza",
-    "img": "/Images/Pappy-Paneer.jpg",
+    "img": "/Images/Pappy-Paneer.webp",
     "description": "Capsicum, onion, red paprika and paneer chunks with cheese.",
     "variants": [
       {
@@ -129,7 +129,7 @@
     "id": 7,
     "name": "Feta Cheese Pizza",
     "category": "Pizza",
-    "img": "/Images/Feta-Cheese-Pizza.jpg",
+    "img": "/Images/Feta-Cheese-Pizza.webp",
     "description": "Capsicum, black olives, jalapeno with feta cheese topping.",
     "variants": [
       {
@@ -150,7 +150,7 @@
     "id": 8,
     "name": "Mexican Paneer Pizza",
     "category": "Pizza",
-    "img": "/Images/Mexican-Paneer-Pizza.jpg",
+    "img": "/Images/Mexican-Paneer-Pizza.webp",
     "description": "Capsicum, paneer, baby corn with Mexican spices.",
     "variants": [
       {
@@ -171,7 +171,7 @@
     "id": 9,
     "name": "Veg Deluxe Pizza",
     "category": "Pizza",
-    "img": "/Images/Veg-Deluxe-Pizza.jpg",
+    "img": "/Images/Veg-Deluxe-Pizza.webp",
     "description": "Loaded veggie pizza with capsicum, onion, corn and cheese.",
     "variants": [
       {
@@ -192,7 +192,7 @@
     "id": 10,
     "name": "Sweet Chilli Pizza",
     "category": "Pizza",
-    "img": "/Images/Sweet-Chilli-Pizza.jpg",
+    "img": "/Images/Sweet-Chilli-Pizza.webp",
     "description": "Sweet chilli sauce base topped with capsicum, onion and cheese.",
     "variants": [
       {
@@ -213,7 +213,7 @@
     "id": 11,
     "name": "Black & White Pizza",
     "category": "Pizza",
-    "img": "/Images/Black-White-Pizza.jpg",
+    "img": "/Images/Black-White-Pizza.webp",
     "description": "Combination of white sauce and black olives with cheese.",
     "variants": [
       {
@@ -234,7 +234,7 @@
     "id": 12,
     "name": "Triple Capsicum Pizza",
     "category": "Pizza",
-    "img": "/Images/Triple-Capsicum-Pizza.jpg",
+    "img": "/Images/Triple-Capsicum-Pizza.webp",
     "description": "Red, yellow and green capsicum with mozzarella cheese.",
     "variants": [
       {
@@ -255,7 +255,7 @@
     "id": 13,
     "name": "Makhni Pizza",
     "category": "Pizza",
-    "img": "/Images/Makhni-Pizza.jpg",
+    "img": "/Images/Makhni-Pizza.webp",
     "description": "Creamy makhni sauce topped with onion, capsicum and olives.",
     "variants": [
       {
@@ -276,7 +276,7 @@
     "id": 14,
     "name": "Chipotle Pizza",
     "category": "Pizza",
-    "img": "/Images/Chipotle-Pizza.jpg",
+    "img": "/Images/Chipotle-Pizza.webp",
     "description": "Chipotle sauce base with onion, capsicum and jalapeno.",
     "variants": [
       {
@@ -297,7 +297,7 @@
     "id": 15,
     "name": "Tandoori Pizza",
     "category": "Pizza",
-    "img": "/Images/Tandoori-Pizza.jpg",
+    "img": "/Images/Tandoori-Pizza.webp",
     "description": "Tandoori flavoured pizza with onion, capsicum and paneer.",
     "variants": [
       {
@@ -318,7 +318,7 @@
     "id": 16,
     "name": "Supreme Pizza",
     "category": "Pizza",
-    "img": "/Images/Supreme-Pizza.jpg",
+    "img": "/Images/Supreme-Pizza.webp",
     "description": "Premium pizza with olives, corn, capsicum and rich cheese.",
     "variants": [
       {
@@ -339,7 +339,7 @@
     "id": 17,
     "name": "5 Star Pizza",
     "category": "Pizza",
-    "img": "/Images/5-Star-Pizza.jpg",
+    "img": "/Images/5-Star-Pizza.webp",
     "description": "House special loaded pizza with extra cheese and veggies.",
     "variants": [
       {
@@ -360,7 +360,7 @@
     "id": 18,
     "name": "New Vijay Bakery Special Pizza",
     "category": "Pizza",
-    "img": "/Images/New-Vijay-Bakery-Special-Pizza.jpg",
+    "img": "/Images/New-Vijay-Bakery-Special-Pizza.webp",
     "description": "Signature bakery special pizza with beetroot, coriander and cheese.",
     "variants": [
       {
@@ -381,7 +381,7 @@
     "id": 19,
     "name": "Aloo Tikki Burger",
     "category": "Burger",
-    "img": "/Images/Aloo-Tikki-Burger.jpg",
+    "img": "/Images/Aloo-Tikki-Burger.webp",
     "description": "Crispy aloo tikki patty with fresh veggies and classic sauce.",
     "variants": [
       {
@@ -394,7 +394,7 @@
     "id": 20,
     "name": "Veg Burger",
     "category": "Burger",
-    "img": "/Images/Veg-Burger.jpg",
+    "img": "/Images/Veg-Burger.webp",
     "description": "Veg patty burger with onion, tomato and mayo.",
     "variants": [
       {
@@ -407,7 +407,7 @@
     "id": 21,
     "name": "Cheese Spicy Burger",
     "category": "Burger",
-    "img": "/Images/Cheese-Spicy-Burger.jpg",
+    "img": "/Images/Cheese-Spicy-Burger.webp",
     "description": "Spicy veg patty loaded with melted cheese.",
     "variants": [
       {
@@ -420,7 +420,7 @@
     "id": 22,
     "name": "Tandoori Tange Burger",
     "category": "Burger",
-    "img": "/Images/Tandoori-Tange-Burger.jpg",
+    "img": "/Images/Tandoori-Tange-Burger.webp",
     "description": "Tandoori-flavoured veg patty with smoky taste.",
     "variants": [
       {
@@ -433,7 +433,7 @@
     "id": 23,
     "name": "Peri Peri Burger",
     "category": "Burger",
-    "img": "/Images/Peri-Peri-Burger.jpg",
+    "img": "/Images/Peri-Peri-Burger.webp",
     "description": "Peri peri seasoned patty with spicy sauce.",
     "variants": [
       {
@@ -446,7 +446,7 @@
     "id": 24,
     "name": "Paneer Crunchy Burger",
     "category": "Burger",
-    "img": "/Images/Paneer-Crunchy-Burger.jpg",
+    "img": "/Images/Paneer-Crunchy-Burger.webp",
     "description": "Crunchy paneer patty with fresh lettuce and sauce.",
     "variants": [
       {
@@ -459,7 +459,7 @@
     "id": 25,
     "name": "Mexican Burger",
     "category": "Burger",
-    "img": "/Images/Mexican-Burger.jpg",
+    "img": "/Images/Mexican-Burger.webp",
     "description": "Mexican-spiced patty with tangy salsa flavour.",
     "variants": [
       {
@@ -472,7 +472,7 @@
     "id": 26,
     "name": "Nacho Cheese Burger",
     "category": "Burger",
-    "img": "/Images/Nacho-Cheese-Burger.jpg",
+    "img": "/Images/Nacho-Cheese-Burger.webp",
     "description": "Nacho cheese sauce layered over a crispy veg patty.",
     "variants": [
       {
@@ -485,7 +485,7 @@
     "id": 27,
     "name": "Maharaja Burger",
     "category": "Burger",
-    "img": "/Images/Maharaja-Burger.jpg",
+    "img": "/Images/Maharaja-Burger.webp",
     "description": "Jumbo-sized veg burger with double filling and cheese.",
     "variants": [
       {
@@ -498,7 +498,7 @@
     "id": 28,
     "name": "Veg Grilled Sandwich",
     "category": "Sandwich",
-    "img": "/Images/Veg-Grilled-Sandwich.jpg",
+    "img": "/Images/Veg-Grilled-Sandwich.webp",
     "description": "Grilled sandwich stuffed with fresh vegetables and butter.",
     "variants": [
       {
@@ -511,7 +511,7 @@
     "id": 29,
     "name": "Cheese Grilled Sandwich",
     "category": "Sandwich",
-    "img": "/Images/Cheese-Grilled-Sandwich.jpg",
+    "img": "/Images/Cheese-Grilled-Sandwich.webp",
     "description": "Classic grilled sandwich loaded with melted cheese.",
     "variants": [
       {
@@ -524,7 +524,7 @@
     "id": 30,
     "name": "Kadai Paneer Sandwich",
     "category": "Sandwich",
-    "img": "/Images/Kadai-Paneer-Sandwich.jpg",
+    "img": "/Images/Kadai-Paneer-Sandwich.webp",
     "description": "Spicy kadai paneer filling with grilled bread.",
     "variants": [
       {
@@ -537,7 +537,7 @@
     "id": 31,
     "name": "Seven Onion Sandwich",
     "category": "Sandwich",
-    "img": "/Images/Seven-Onion-Sandwich.jpg",
+    "img": "/Images/Seven-Onion-Sandwich.webp",
     "description": "Onion-loaded sandwich with light spices and butter.",
     "variants": [
       {
@@ -550,7 +550,7 @@
     "id": 32,
     "name": "Paneer Takatak Sandwich",
     "category": "Sandwich",
-    "img": "/Images/Paneer-Takatak-Sandwich.jpg",
+    "img": "/Images/Paneer-Takatak-Sandwich.webp",
     "description": "Tangy paneer takatak masala with grilled bread.",
     "variants": [
       {
@@ -563,7 +563,7 @@
     "id": 33,
     "name": "Gym Diet Sandwich",
     "category": "Sandwich",
-    "img": "/Images/Gym-Diet-Sandwich.jpg",
+    "img": "/Images/Gym-Diet-Sandwich.webp",
     "description": "Healthy sandwich with low oil, veggies and paneer.",
     "variants": [
       {
@@ -576,7 +576,7 @@
     "id": 34,
     "name": "Triple Layer Sandwich",
     "category": "Sandwich",
-    "img": "/Images/Triple-Layer-Sandwich.jpg",
+    "img": "/Images/Triple-Layer-Sandwich.webp",
     "description": "Three-layer sandwich packed with veggies and cheese.",
     "variants": [
       {
@@ -589,7 +589,7 @@
     "id": 35,
     "name": "Tandoori Tiyani Sandwich",
     "category": "Sandwich",
-    "img": "/Images/Tandoori-Tiyani-Sandwich.jpg",
+    "img": "/Images/Tandoori-Tiyani-Sandwich.webp",
     "description": "Tandoori-flavoured filling with grilled bread slices.",
     "variants": [
       {
@@ -602,7 +602,7 @@
     "id": 36,
     "name": "Veg Sub",
     "category": "Subway",
-    "img": "/Images/Veg-Sub.jpg",
+    "img": "/Images/Veg-Sub.webp",
     "description": "Fresh veggie sub with sauces in soft bread.",
     "variants": [
       {
@@ -615,7 +615,7 @@
     "id": 37,
     "name": "Cheese Spicy Sub",
     "category": "Subway",
-    "img": "/Images/Cheese-Spicy-Sub.jpg",
+    "img": "/Images/Cheese-Spicy-Sub.webp",
     "description": "Cheese-loaded sub with spicy seasoning.",
     "variants": [
       {
@@ -628,7 +628,7 @@
     "id": 38,
     "name": "Paneer Crunchy Sub",
     "category": "Subway",
-    "img": "/Images/Paneer-Crunchy-Sub.jpg",
+    "img": "/Images/Paneer-Crunchy-Sub.webp",
     "description": "Crunchy paneer filling with veggies and sauce.",
     "variants": [
       {
@@ -641,7 +641,7 @@
     "id": 39,
     "name": "Veg Hara Bhara Sub",
     "category": "Subway",
-    "img": "/Images/Veg-Hara-Bhara-Sub.jpg",
+    "img": "/Images/Veg-Hara-Bhara-Sub.webp",
     "description": "Hara bhara kebab style patty in sub bread.",
     "variants": [
       {
@@ -654,7 +654,7 @@
     "id": 40,
     "name": "Nacho Subway",
     "category": "Subway",
-    "img": "/Images/Nacho-Subway.jpg",
+    "img": "/Images/Nacho-Subway.webp",
     "description": "Nacho cheese sauce with veggies in sub bread.",
     "variants": [
       {
@@ -667,7 +667,7 @@
     "id": 41,
     "name": "Aloo Tikki Wrap",
     "category": "Wrap",
-    "img": "/Images/Aloo-Tikki-Wrap.jpg",
+    "img": "/Images/Aloo-Tikki-Wrap.webp",
     "description": "Crispy aloo tikki wrapped with fresh veggies and sauces.",
     "variants": [
       {
@@ -680,7 +680,7 @@
     "id": 42,
     "name": "Salad Wrap",
     "category": "Wrap",
-    "img": "/Images/Salad-Wrap.jpg",
+    "img": "/Images/Salad-Wrap.webp",
     "description": "Fresh salad wrap with mixed vegetables and light dressing.",
     "variants": [
       {
@@ -693,7 +693,7 @@
     "id": 43,
     "name": "Peri Peri Wrap",
     "category": "Wrap",
-    "img": "/Images/Peri-Peri-Wrap.jpg",
+    "img": "/Images/Peri-Peri-Wrap.webp",
     "description": "Veg wrap tossed in spicy peri peri seasoning.",
     "variants": [
       {
@@ -706,7 +706,7 @@
     "id": 44,
     "name": "Veg Cheese Wrap",
     "category": "Wrap",
-    "img": "/Images/Veg-Cheese-Wrap.jpg",
+    "img": "/Images/Veg-Cheese-Wrap.webp",
     "description": "Veg wrap loaded with melted cheese for a creamy bite.",
     "variants": [
       {
@@ -719,7 +719,7 @@
     "id": 45,
     "name": "Mexican Wrap",
     "category": "Wrap",
-    "img": "/Images/Mexican-Wrap.jpg",
+    "img": "/Images/Mexican-Wrap.webp",
     "description": "Mexican-style spiced veggie wrap with tangy flavours.",
     "variants": [
       {
@@ -732,7 +732,7 @@
     "id": 46,
     "name": "Kadai Paneer Wrap",
     "category": "Wrap",
-    "img": "/Images/Kadai-Paneer-Wrap.jpg",
+    "img": "/Images/Kadai-Paneer-Wrap.webp",
     "description": "Spicy kadai paneer filling wrapped in soft bread.",
     "variants": [
       {
@@ -745,7 +745,7 @@
     "id": 47,
     "name": "Mushroom Wrap",
     "category": "Wrap",
-    "img": "/Images/Mushroom-Wrap.jpg",
+    "img": "/Images/Mushroom-Wrap.webp",
     "description": "Sauteed mushrooms with spices wrapped fresh.",
     "variants": [
       {
@@ -758,7 +758,7 @@
     "id": 48,
     "name": "Paneer Crunch Wrap",
     "category": "Wrap",
-    "img": "/Images/Paneer-Crunch-Wrap.jpg",
+    "img": "/Images/Paneer-Crunch-Wrap.webp",
     "description": "Crunchy paneer filling with sauces in a soft wrap.",
     "variants": [
       {
@@ -771,7 +771,7 @@
     "id": 49,
     "name": "Masala Twister",
     "category": "Twister",
-    "img": "/Images/Masala-Twister.jpg",
+    "img": "/Images/Masala-Twister.webp",
     "description": "Classic masala-flavoured veg twister wrapped in soft roti.",
     "variants": [
       {
@@ -784,7 +784,7 @@
     "id": 50,
     "name": "Peri Peri Twister",
     "category": "Twister",
-    "img": "/Images/Peri-Peri-Twister.jpg",
+    "img": "/Images/Peri-Peri-Twister.webp",
     "description": "Spicy peri peri seasoned veg twister.",
     "variants": [
       {
@@ -797,7 +797,7 @@
     "id": 51,
     "name": "Mix Sauce Twister",
     "category": "Twister",
-    "img": "/Images/Mix-Sauce-Twister.jpg",
+    "img": "/Images/Mix-Sauce-Twister.webp",
     "description": "Veg twister tossed in a mix of red and white sauces.",
     "variants": [
       {
@@ -810,7 +810,7 @@
     "id": 52,
     "name": "Red Sauce Pasta",
     "category": "Pasta",
-    "img": "/Images/Red-Sauce-Pasta.jpg",
+    "img": "/Images/Red-Sauce-Pasta.webp",
     "description": "Pasta cooked in tangy tomato-based red sauce.",
     "variants": [
       {
@@ -823,7 +823,7 @@
     "id": 53,
     "name": "White Sauce Pasta",
     "category": "Pasta",
-    "img": "/Images/White-Sauce-Pasta.jpg",
+    "img": "/Images/White-Sauce-Pasta.webp",
     "description": "Creamy white sauce pasta with mild seasoning.",
     "variants": [
       {
@@ -836,7 +836,7 @@
     "id": 54,
     "name": "Tandoori Tange Pasta",
     "category": "Pasta",
-    "img": "/Images/Tandoori-Tange-Pasta.jpg",
+    "img": "/Images/Tandoori-Tange-Pasta.webp",
     "description": "Tandoori-flavoured pasta with smoky Indian spices.",
     "variants": [
       {
@@ -849,7 +849,7 @@
     "id": 55,
     "name": "Makhni Paneer Pasta",
     "category": "Pasta",
-    "img": "/Images/Makhni-Paneer-Pasta.jpg",
+    "img": "/Images/Makhni-Paneer-Pasta.webp",
     "description": "Rich makhni sauce pasta with paneer cubes.",
     "variants": [
       {
@@ -862,7 +862,7 @@
     "id": 56,
     "name": "Pink Sauce Pasta",
     "category": "Pasta",
-    "img": "/Images/Pink-Sauce-Pasta.jpg",
+    "img": "/Images/Pink-Sauce-Pasta.webp",
     "description": "Perfect blend of red and white sauce in creamy pasta.",
     "variants": [
       {
@@ -875,7 +875,7 @@
     "id": 57,
     "name": "Veg Italian Pasta",
     "category": "Pasta",
-    "img": "/Images/Veg-Italian-Pasta.jpg",
+    "img": "/Images/Veg-Italian-Pasta.webp",
     "description": "Italian-style pasta tossed with vegetables and herbs.",
     "variants": [
       {
@@ -888,7 +888,7 @@
     "id": 58,
     "name": "Green Pasta",
     "category": "Pasta",
-    "img": "/Images/Green-Pasta.jpg",
+    "img": "/Images/Green-Pasta.webp",
     "description": "Pasta cooked in fresh green herb-based sauce.",
     "variants": [
       {
@@ -901,7 +901,7 @@
     "id": 59,
     "name": "Round Cheese Bread",
     "category": "Garlic Bread",
-    "img": "/Images/Round-Cheese-Bread.jpg",
+    "img": "/Images/Round-Cheese-Bread.webp",
     "description": "Round bread topped with cheese and garlic butter.",
     "variants": [
       {
@@ -914,7 +914,7 @@
     "id": 60,
     "name": "Cheese Corn Bread",
     "category": "Garlic Bread",
-    "img": "/Images/Cheese-Corn-Bread.jpg",
+    "img": "/Images/Cheese-Corn-Bread.webp",
     "description": "Garlic bread topped with cheese and sweet corn.",
     "variants": [
       {
@@ -927,7 +927,7 @@
     "id": 61,
     "name": "Stuffed Garlic Bread",
     "category": "Garlic Bread",
-    "img": "/Images/Stuffed-Garlic-Bread.jpg",
+    "img": "/Images/Stuffed-Garlic-Bread.webp",
     "description": "Garlic bread stuffed with cheesy filling.",
     "variants": [
       {
@@ -940,7 +940,7 @@
     "id": 62,
     "name": "Italian Garlic Bread",
     "category": "Garlic Bread",
-    "img": "/Images/Italian-Garlic-Bread.jpg",
+    "img": "/Images/Italian-Garlic-Bread.webp",
     "description": "Italian-style garlic bread with herbs.",
     "variants": [
       {
@@ -953,7 +953,7 @@
     "id": 63,
     "name": "Calzone",
     "category": "Garlic Bread",
-    "img": "/Images/Calzone.jpg",
+    "img": "/Images/Calzone.webp",
     "description": "Folded pizza-style bread stuffed with cheese and veggies.",
     "variants": [
       {
@@ -966,7 +966,7 @@
     "id": 64,
     "name": "Regular Noodles",
     "category": "Noodles",
-    "img": "/Images/Regular-Noodles.jpg",
+    "img": "/Images/Regular-Noodles.webp",
     "description": "Simple stir-fried noodles with vegetables.",
     "variants": [
       {
@@ -979,7 +979,7 @@
     "id": 65,
     "name": "Singapore Noodles",
     "category": "Noodles",
-    "img": "/Images/Singapore-Noodles.jpg",
+    "img": "/Images/Singapore-Noodles.webp",
     "description": "Spicy Singapore-style noodles.",
     "variants": [
       {
@@ -992,7 +992,7 @@
     "id": 66,
     "name": "Hakka Noodles",
     "category": "Noodles",
-    "img": "/Images/Hakka-Noodles.jpg",
+    "img": "/Images/Hakka-Noodles.webp",
     "description": "Indo-Chinese hakka noodles with veggies.",
     "variants": [
       {
@@ -1005,7 +1005,7 @@
     "id": 67,
     "name": "Sezwan Noodles",
     "category": "Noodles",
-    "img": "/Images/Sezwan-Noodles.jpg",
+    "img": "/Images/Sezwan-Noodles.webp",
     "description": "Hot and spicy schezwan noodles.",
     "variants": [
       {
@@ -1018,7 +1018,7 @@
     "id": 68,
     "name": "Chilli Garlic Noodles",
     "category": "Noodles",
-    "img": "/Images/Chilli-Garlic-Noodles.jpg",
+    "img": "/Images/Chilli-Garlic-Noodles.webp",
     "description": "Noodles tossed in chilli garlic sauce.",
     "variants": [
       {
@@ -1031,7 +1031,7 @@
     "id": 69,
     "name": "Garlic Noodles",
     "category": "Noodles",
-    "img": "/Images/Garlic-Noodles.jpg",
+    "img": "/Images/Garlic-Noodles.webp",
     "description": "Strong garlic-flavoured noodles.",
     "variants": [
       {
@@ -1044,7 +1044,7 @@
     "id": 70,
     "name": "Dragon Noodles",
     "category": "Noodles",
-    "img": "/Images/Dragon-Noodles.jpg",
+    "img": "/Images/Dragon-Noodles.webp",
     "description": "Spicy dragon-style noodles with bold flavours.",
     "variants": [
       {
@@ -1057,7 +1057,7 @@
     "id": 71,
     "name": "New Vijay Bakery Special Thukpa",
     "category": "Noodles",
-    "img": "/Images/New-Vijay-Bakery-Special-Thukpa.jpg",
+    "img": "/Images/New-Vijay-Bakery-Special-Thukpa.webp",
     "description": "House special thukpa noodles with rich broth.",
     "variants": [
       {
@@ -1070,7 +1070,7 @@
     "id": 72,
     "name": "Spring Roll",
     "category": "Spring Roll",
-    "img": "/Images/Spring-Roll.jpg",
+    "img": "/Images/Spring-Roll.webp",
     "description": "Crispy fried vegetable spring rolls.",
     "variants": [
       {
@@ -1083,7 +1083,7 @@
     "id": 73,
     "name": "Cigar Roll",
     "category": "Spring Roll",
-    "img": "/Images/Cigar-Roll.jpg",
+    "img": "/Images/Cigar-Roll.webp",
     "description": "Thin cigar-shaped rolls with veg stuffing.",
     "variants": [
       {
@@ -1096,7 +1096,7 @@
     "id": 74,
     "name": "Veg Steam Momos",
     "category": "Spring Roll",
-    "img": "/Images/Veg-Steam-Momos.jpg",
+    "img": "/Images/Veg-Steam-Momos.webp",
     "description": "Steamed momos stuffed with vegetables.",
     "variants": [
       {
@@ -1109,7 +1109,7 @@
     "id": 75,
     "name": "Paneer Steam Momos",
     "category": "Spring Roll",
-    "img": "/Images/Paneer-Steam-Momos.jpg",
+    "img": "/Images/Paneer-Steam-Momos.webp",
     "description": "Steamed momos filled with paneer.",
     "variants": [
       {
@@ -1122,7 +1122,7 @@
     "id": 76,
     "name": "Veg Kurkure Momos",
     "category": "Spring Roll",
-    "img": "/Images/Veg-Kurkure-Momos.jpg",
+    "img": "/Images/Veg-Kurkure-Momos.webp",
     "description": "Crispy kurkure-style veg momos.",
     "variants": [
       {
@@ -1135,7 +1135,7 @@
     "id": 77,
     "name": "Veg Fry Momos",
     "category": "Spring Roll",
-    "img": "/Images/Veg-Fry-Momos.jpg",
+    "img": "/Images/Veg-Fry-Momos.webp",
     "description": "Fried veg momos with crispy outer layer.",
     "variants": [
       {
@@ -1148,7 +1148,7 @@
     "id": 78,
     "name": "Paneer Kurkure Momos",
     "category": "Spring Roll",
-    "img": "/Images/Paneer-Kurkure-Momos.jpg",
+    "img": "/Images/Paneer-Kurkure-Momos.webp",
     "description": "Crunchy paneer kurkure momos.",
     "variants": [
       {
@@ -1161,7 +1161,7 @@
     "id": 79,
     "name": "Paneer Fry Momos",
     "category": "Spring Roll",
-    "img": "/Images/Paneer-Fry-Momos.jpg",
+    "img": "/Images/Paneer-Fry-Momos.webp",
     "description": "Fried paneer-stuffed momos.",
     "variants": [
       {
@@ -1174,7 +1174,7 @@
     "id": 80,
     "name": "Salty Fries",
     "category": "Fries",
-    "img": "/Images/Salty-Fries.jpg",
+    "img": "/Images/Salty-Fries.webp",
     "description": "Classic salted French fries.",
     "variants": [
       {
@@ -1187,7 +1187,7 @@
     "id": 81,
     "name": "Masala Fries",
     "category": "Fries",
-    "img": "/Images/Masala-Fries.jpg",
+    "img": "/Images/Masala-Fries.webp",
     "description": "Fries tossed in Indian masala spices.",
     "variants": [
       {
@@ -1200,7 +1200,7 @@
     "id": 82,
     "name": "Peri Peri Fries",
     "category": "Fries",
-    "img": "/Images/Peri-Peri-Fries.jpg",
+    "img": "/Images/Peri-Peri-Fries.webp",
     "description": "Fries coated with peri peri seasoning.",
     "variants": [
       {
@@ -1213,7 +1213,7 @@
     "id": 83,
     "name": "Mix Loaded Fries",
     "category": "Fries",
-    "img": "/Images/Mix-Loaded-Fries.jpg",
+    "img": "/Images/Mix-Loaded-Fries.webp",
     "description": "Fries loaded with sauces and toppings.",
     "variants": [
       {
@@ -1226,7 +1226,7 @@
     "id": 84,
     "name": "Veg Strips",
     "category": "Fries",
-    "img": "/Images/Veg-Strips.jpg",
+    "img": "/Images/Veg-Strips.webp",
     "description": "Crispy fried veg strips.",
     "variants": [
       {
@@ -1239,7 +1239,7 @@
     "id": 85,
     "name": "Cheese Shots",
     "category": "Fries",
-    "img": "/Images/Cheese-Shots.jpg",
+    "img": "/Images/Cheese-Shots.webp",
     "description": "Deep-fried cheese balls.",
     "variants": [
       {
@@ -1252,7 +1252,7 @@
     "id": 172,
     "name": "Paneer Strips",
     "category": "Fries",
-    "img": "/Images/Paneer-Strips.jpg",
+    "img": "/Images/Paneer-Strips.webp",
     "description": "Crispy paneer finger strips.",
     "variants": [
       {
@@ -1265,7 +1265,7 @@
     "id": 86,
     "name": "Veg Salad",
     "category": "Salad",
-    "img": "/Images/Veg-Salad.jpg",
+    "img": "/Images/Veg-Salad.webp",
     "description": "Fresh mixed vegetable salad.",
     "variants": [
       {
@@ -1278,7 +1278,7 @@
     "id": 87,
     "name": "Green Salad",
     "category": "Salad",
-    "img": "/Images/Green-Salad.jpg",
+    "img": "/Images/Green-Salad.webp",
     "description": "Healthy green vegetable salad.",
     "variants": [
       {
@@ -1291,7 +1291,7 @@
     "id": 88,
     "name": "Russian Salad",
     "category": "Salad",
-    "img": "/Images/Russian-Salad.jpg",
+    "img": "/Images/Russian-Salad.webp",
     "description": "Creamy Russian-style salad.",
     "variants": [
       {
@@ -1304,7 +1304,7 @@
     "id": 89,
     "name": "Veg Saute With Brown Rice",
     "category": "Salad",
-    "img": "/Images/Veg-Saute-With-Brown-Rice.jpg",
+    "img": "/Images/Veg-Saute-With-Brown-Rice.webp",
     "description": "Sauteed vegetables served with brown rice.",
     "variants": [
       {
@@ -1317,7 +1317,7 @@
     "id": 90,
     "name": "Grilled Tofu Paneer Salad",
     "category": "Salad",
-    "img": "/Images/Grilled-Tofu-Paneer-Salad.jpg",
+    "img": "/Images/Grilled-Tofu-Paneer-Salad.webp",
     "description": "Grilled tofu & paneer with salad greens.",
     "variants": [
       {
@@ -1330,7 +1330,7 @@
     "id": 91,
     "name": "High Protein Salad",
     "category": "Salad",
-    "img": "/Images/High-Protein-Salad.jpg",
+    "img": "/Images/High-Protein-Salad.webp",
     "description": "Protein-rich healthy salad.",
     "variants": [
       {
@@ -1343,7 +1343,7 @@
     "id": 92,
     "name": "Virgin Mojito",
     "category": "Mocktail",
-    "img": "/Images/Virgin-Mojito.jpg",
+    "img": "/Images/Virgin-Mojito.webp",
     "description": "Classic mint lime mojito.",
     "variants": [
       {
@@ -1356,7 +1356,7 @@
     "id": 93,
     "name": "Green Apple Mojito",
     "category": "Mocktail",
-    "img": "/Images/Green-Apple-Mojito.jpg",
+    "img": "/Images/Green-Apple-Mojito.webp",
     "description": "Refreshing green apple mojito.",
     "variants": [
       {
@@ -1369,7 +1369,7 @@
     "id": 94,
     "name": "Water Melon Mojito",
     "category": "Mocktail",
-    "img": "/Images/Water-Melon-Mojito.jpg",
+    "img": "/Images/Water-Melon-Mojito.webp",
     "description": "Fresh watermelon mojito.",
     "variants": [
       {
@@ -1382,7 +1382,7 @@
     "id": 95,
     "name": "Paan Shot Mojito",
     "category": "Mocktail",
-    "img": "/Images/Paan-Shot-Mojito.jpg",
+    "img": "/Images/Paan-Shot-Mojito.webp",
     "description": "Paan-flavoured mojito shot.",
     "variants": [
       {
@@ -1395,7 +1395,7 @@
     "id": 96,
     "name": "Bubble Gum Mojito",
     "category": "Mocktail",
-    "img": "/Images/Bubble-Gum-Mojito.jpg",
+    "img": "/Images/Bubble-Gum-Mojito.webp",
     "description": "Sweet bubble gum mojito.",
     "variants": [
       {
@@ -1408,7 +1408,7 @@
     "id": 97,
     "name": "Black Tangy Mojito",
     "category": "Mocktail",
-    "img": "/Images/Black-Tangy-Mojito.jpg",
+    "img": "/Images/Black-Tangy-Mojito.webp",
     "description": "Tangy black-flavoured mojito.",
     "variants": [
       {
@@ -1421,7 +1421,7 @@
     "id": 98,
     "name": "Vanilla Shake",
     "category": "Shakes",
-    "img": "/Images/Vanilla-Shake.jpg",
+    "img": "/Images/Vanilla-Shake.webp",
     "description": "Classic vanilla milkshake made with milk and ice cream.",
     "variants": [
       {
@@ -1434,7 +1434,7 @@
     "id": 99,
     "name": "Strawberry Shake",
     "category": "Shakes",
-    "img": "/Images/Strawberry-Shake.jpg",
+    "img": "/Images/Strawberry-Shake.webp",
     "description": "Sweet strawberry flavoured milkshake.",
     "variants": [
       {
@@ -1447,7 +1447,7 @@
     "id": 100,
     "name": "Butter Scotch Shake",
     "category": "Shakes",
-    "img": "/Images/Butter-Scotch-Shake.jpg",
+    "img": "/Images/Butter-Scotch-Shake.webp",
     "description": "Creamy butterscotch flavoured shake.",
     "variants": [
       {
@@ -1460,7 +1460,7 @@
     "id": 101,
     "name": "Oreo Milk Shake",
     "category": "Shakes",
-    "img": "/Images/Oreo-Milk-Shake.jpg",
+    "img": "/Images/Oreo-Milk-Shake.webp",
     "description": "Thick shake blended with Oreo biscuits.",
     "variants": [
       {
@@ -1473,7 +1473,7 @@
     "id": 102,
     "name": "Dairy Milk Shake",
     "category": "Shakes",
-    "img": "/Images/Dairy-Milk-Shake.jpg",
+    "img": "/Images/Dairy-Milk-Shake.webp",
     "description": "Chocolate shake made with Dairy Milk chocolate.",
     "variants": [
       {
@@ -1486,7 +1486,7 @@
     "id": 103,
     "name": "Kit Kat Shake",
     "category": "Shakes",
-    "img": "/Images/Kit-Kat-Shake.jpg",
+    "img": "/Images/Kit-Kat-Shake.webp",
     "description": "Rich milkshake blended with KitKat chocolate.",
     "variants": [
       {
@@ -1499,7 +1499,7 @@
     "id": 104,
     "name": "Black Currant Shake",
     "category": "Shakes",
-    "img": "/Images/Black-Currant-Shake.jpg",
+    "img": "/Images/Black-Currant-Shake.webp",
     "description": "Fruity black currant flavoured milkshake.",
     "variants": [
       {
@@ -1512,7 +1512,7 @@
     "id": 105,
     "name": "Bubble Gum Shake",
     "category": "Shakes",
-    "img": "/Images/Bubble-Gum-Shake.jpg",
+    "img": "/Images/Bubble-Gum-Shake.webp",
     "description": "Sweet bubble gum flavoured shake.",
     "variants": [
       {
@@ -1525,7 +1525,7 @@
     "id": 106,
     "name": "Pineapple Shake",
     "category": "Shakes",
-    "img": "/Images/Pineapple-Shake.jpg",
+    "img": "/Images/Pineapple-Shake.webp",
     "description": "Refreshing pineapple flavoured milkshake.",
     "variants": [
       {
@@ -1538,7 +1538,7 @@
     "id": 107,
     "name": "Kiwi Shake",
     "category": "Shakes",
-    "img": "/Images/Kiwi-Shake.jpg",
+    "img": "/Images/Kiwi-Shake.webp",
     "description": "Tangy kiwi flavoured milkshake.",
     "variants": [
       {
@@ -1551,7 +1551,7 @@
     "id": 108,
     "name": "Cream Biscoff Shake",
     "category": "Shakes",
-    "img": "/Images/Cream-Biscoff-Shake.jpg",
+    "img": "/Images/Cream-Biscoff-Shake.webp",
     "description": "Premium creamy shake made with Biscoff biscuits.",
     "variants": [
       {
@@ -1564,7 +1564,7 @@
     "id": 109,
     "name": "Hot Coffee",
     "category": "Coffee",
-    "img": "/Images/Hot-Coffee.jpg",
+    "img": "/Images/Hot-Coffee.webp",
     "description": "Freshly brewed hot coffee.",
     "variants": [
       {
@@ -1577,7 +1577,7 @@
     "id": 110,
     "name": "Hot Chocolate Coffee",
     "category": "Coffee",
-    "img": "/Images/Hot-Chocolate-Coffee.jpg",
+    "img": "/Images/Hot-Chocolate-Coffee.webp",
     "description": "Hot coffee mixed with chocolate flavour.",
     "variants": [
       {
@@ -1590,7 +1590,7 @@
     "id": 111,
     "name": "Hot Caramel Coffee",
     "category": "Coffee",
-    "img": "/Images/Hot-Caramel-Coffee.jpg",
+    "img": "/Images/Hot-Caramel-Coffee.webp",
     "description": "Hot coffee infused with caramel flavour.",
     "variants": [
       {
@@ -1603,7 +1603,7 @@
     "id": 112,
     "name": "Black Hot Coffee",
     "category": "Coffee",
-    "img": "/Images/Black-Hot-Coffee.jpg",
+    "img": "/Images/Black-Hot-Coffee.webp",
     "description": "Strong black coffee without milk.",
     "variants": [
       {
@@ -1616,7 +1616,7 @@
     "id": 113,
     "name": "Butter Scotch Coffee",
     "category": "Coffee",
-    "img": "/Images/Butter-Scotch-Coffee.jpg",
+    "img": "/Images/Butter-Scotch-Coffee.webp",
     "description": "Coffee blended with butterscotch flavour.",
     "variants": [
       {
@@ -1629,7 +1629,7 @@
     "id": 114,
     "name": "Cold Coffee",
     "category": "Cold Coffee",
-    "img": "/Images/Cold-Coffee.jpg",
+    "img": "/Images/Cold-Coffee.webp",
     "description": "Chilled classic cold coffee.",
     "variants": [
       {
@@ -1642,7 +1642,7 @@
     "id": 115,
     "name": "Choco Cold Coffee",
     "category": "Cold Coffee",
-    "img": "/Images/Choco-Cold-Coffee.jpg",
+    "img": "/Images/Choco-Cold-Coffee.webp",
     "description": "Cold coffee with chocolate flavour.",
     "variants": [
       {
@@ -1655,7 +1655,7 @@
     "id": 116,
     "name": "Caramel Cold Coffee",
     "category": "Cold Coffee",
-    "img": "/Images/Caramel-Cold-Coffee.jpg",
+    "img": "/Images/Caramel-Cold-Coffee.webp",
     "description": "Cold coffee blended with caramel syrup.",
     "variants": [
       {
@@ -1668,7 +1668,7 @@
     "id": 117,
     "name": "Strong Cold Coffee",
     "category": "Cold Coffee",
-    "img": "/Images/Strong-Cold-Coffee.jpg",
+    "img": "/Images/Strong-Cold-Coffee.webp",
     "description": "Extra strong chilled coffee.",
     "variants": [
       {
@@ -1681,7 +1681,7 @@
     "id": 118,
     "name": "Brownie Cold Coffee",
     "category": "Cold Coffee",
-    "img": "/Images/Brownie-Cold-Coffee.jpg",
+    "img": "/Images/Brownie-Cold-Coffee.webp",
     "description": "Cold coffee topped with brownie flavour.",
     "variants": [
       {
@@ -1694,7 +1694,7 @@
     "id": 119,
     "name": "Sesame Mushroom",
     "category": "Mushroom Dish",
-    "img": "/Images/Sesame-Mushroom.jpg",
+    "img": "/Images/Sesame-Mushroom.webp",
     "description": "Crispy mushrooms tossed in sesame-flavoured sauce.",
     "variants": [
       {
@@ -1707,7 +1707,7 @@
     "id": 120,
     "name": "Dragon Mushroom",
     "category": "Mushroom Dish",
-    "img": "/Images/Dragon-Mushroom.jpg",
+    "img": "/Images/Dragon-Mushroom.webp",
     "description": "Spicy dragon-style mushrooms with bold sauces.",
     "variants": [
       {
@@ -1720,7 +1720,7 @@
     "id": 121,
     "name": "Singapore Mushroom Chilli",
     "category": "Mushroom Dish",
-    "img": "/Images/Singapore-Mushroom-Chilli.jpg",
+    "img": "/Images/Singapore-Mushroom-Chilli.webp",
     "description": "Singapore-style chilli mushroom with Indo-Chinese flavours.",
     "variants": [
       {
@@ -1733,7 +1733,7 @@
     "id": 122,
     "name": "Chilli Mushroom",
     "category": "Mushroom Dish",
-    "img": "/Images/Chilli-Mushroom.jpg",
+    "img": "/Images/Chilli-Mushroom.webp",
     "description": "Classic chilli mushroom tossed with onion and capsicum.",
     "variants": [
       {
@@ -1746,7 +1746,7 @@
     "id": 123,
     "name": "Mushroom Duplex",
     "category": "Mushroom Dish",
-    "img": "/Images/Mushroom-Duplex.jpg",
+    "img": "/Images/Mushroom-Duplex.webp",
     "description": "Double-style mushroom preparation with rich gravy.",
     "variants": [
       {
@@ -1759,7 +1759,7 @@
     "id": 124,
     "name": "Mushroom Pakoda",
     "category": "Mushroom Dish",
-    "img": "/Images/Mushroom-Pakoda.jpg",
+    "img": "/Images/Mushroom-Pakoda.webp",
     "description": "Deep-fried mushroom pakodas with crispy coating.",
     "variants": [
       {
@@ -1772,7 +1772,7 @@
     "id": 125,
     "name": "Italian Lemon Paneer",
     "category": "Italian Dish",
-    "img": "/Images/Italian-Lemon-Paneer.jpg",
+    "img": "/Images/italian-lemon-paneer.webp",
     "description": "Lemon-flavoured paneer cooked in Italian herbs.",
     "variants": [
       {
@@ -1785,7 +1785,7 @@
     "id": 126,
     "name": "Sesame Paneer",
     "category": "Italian Dish",
-    "img": "/Images/Sesame-Paneer.jpg",
+    "img": "/Images/Sesame-Paneer.webp",
     "description": "Paneer tossed in sesame sauce with crunchy texture.",
     "variants": [
       {
@@ -1798,7 +1798,7 @@
     "id": 127,
     "name": "Korean Super Crunchy Paneer",
     "category": "Italian Dish",
-    "img": "/Images/Korean-Super-Crunchy-Paneer.jpg",
+    "img": "/Images/Korean-Super-Crunchy-Paneer.webp",
     "description": "Extra-crispy paneer with Korean-style seasoning.",
     "variants": [
       {
@@ -1811,7 +1811,7 @@
     "id": 128,
     "name": "Dragon Chilli Paneer",
     "category": "Italian Dish",
-    "img": "/Images/Dragon-Chilli-Paneer.jpg",
+    "img": "/Images/Dragon-Chilli-Paneer.webp",
     "description": "Spicy dragon-style chilli paneer.",
     "variants": [
       {
@@ -1824,7 +1824,7 @@
     "id": 129,
     "name": "Honey Chilli Paneer",
     "category": "Italian Dish",
-    "img": "/Images/Honey-Chilli-Paneer.jpg",
+    "img": "/Images/Honey-Chilli-Paneer.webp",
     "description": "Sweet and spicy paneer tossed in honey chilli sauce.",
     "variants": [
       {
@@ -1837,7 +1837,7 @@
     "id": 130,
     "name": "Chilli Paneer",
     "category": "Italian Dish",
-    "img": "/Images/Chilli-Paneer.jpg",
+    "img": "/Images/Chilli-Paneer.webp",
     "description": "Classic chilli paneer with Indo-Chinese flavour.",
     "variants": [
       {
@@ -1850,7 +1850,7 @@
     "id": 131,
     "name": "Amritsar Paneer Pakoda",
     "category": "Italian Dish",
-    "img": "/Images/Amritsar-Paneer-Pakoda.jpg",
+    "img": "/Images/Amritsar-Paneer-Pakoda.webp",
     "description": "Amritsari-style paneer pakodas, crispy and spiced.",
     "variants": [
       {
@@ -1863,7 +1863,7 @@
     "id": 132,
     "name": "Paneer Stuff Pakoda",
     "category": "Italian Dish",
-    "img": "/Images/Paneer-Stuff-Pakoda.jpg",
+    "img": "/Images/Paneer-Stuff-Pakoda.webp",
     "description": "Stuffed paneer pakodas with crunchy outer layer.",
     "variants": [
       {
@@ -1876,7 +1876,7 @@
     "id": 133,
     "name": "Veg Manchow Soup",
     "category": "Soup",
-    "img": "/Images/Veg-Manchow-Soup.jpg",
+    "img": "/Images/Veg-Manchow-Soup.webp",
     "description": "Thick manchow soup with vegetables and garlic flavour.",
     "variants": [
       {
@@ -1889,7 +1889,7 @@
     "id": 134,
     "name": "Sweet Corn Soup",
     "category": "Soup",
-    "img": "/Images/Sweet-Corn-Soup.jpg",
+    "img": "/Images/Sweet-Corn-Soup.webp",
     "description": "Mild sweet corn soup with vegetable bits.",
     "variants": [
       {
@@ -1902,7 +1902,7 @@
     "id": 135,
     "name": "Lemon Coriander Soup",
     "category": "Soup",
-    "img": "/Images/Lemon-Coriander-Soup.jpg",
+    "img": "/Images/Lemon-Coriander-Soup.webp",
     "description": "Light soup with lemon and coriander freshness.",
     "variants": [
       {
@@ -1915,7 +1915,7 @@
     "id": 136,
     "name": "Veg Clear Soup",
     "category": "Soup",
-    "img": "/Images/Veg-Clear-Soup.jpg",
+    "img": "/Images/Veg-Clear-Soup.webp",
     "description": "Clear vegetable soup with subtle seasoning.",
     "variants": [
       {
@@ -1928,7 +1928,7 @@
     "id": 137,
     "name": "Manchurian Dry",
     "category": "Street Food",
-    "img": "/Images/Manchurian-Dry.jpg",
+    "img": "/Images/Manchurian-Dry.webp",
     "description": "Deep-fried vegetable balls tossed in Indo-Chinese spices.",
     "variants": [
       {
@@ -1941,7 +1941,7 @@
     "id": 138,
     "name": "Manchurian Gravy",
     "category": "Street Food",
-    "img": "/Images/Manchurian-Gravy.jpg",
+    "img": "/Images/Manchurian-Gravy.webp",
     "description": "Veg manchurian served in thick, spicy gravy.",
     "variants": [
       {
@@ -1954,7 +1954,7 @@
     "id": 139,
     "name": "Mexican Veg Crispy",
     "category": "Street Food",
-    "img": "/Images/Mexican-Veg-Crispy.jpg",
+    "img": "/Images/Mexican-Veg-Crispy.webp",
     "description": "Crispy fried vegetables with Mexican-style seasoning.",
     "variants": [
       {
@@ -1967,7 +1967,7 @@
     "id": 140,
     "name": "Cauliflower 72",
     "category": "Street Food",
-    "img": "/Images/Cauliflower-72.jpg",
+    "img": "/Images/Cauliflower-72.webp",
     "description": "Crispy cauliflower tossed in tangy sauce.",
     "variants": [
       {
@@ -1980,7 +1980,7 @@
     "id": 141,
     "name": "Honey Cauliflower",
     "category": "Street Food",
-    "img": "/Images/Honey-Cauliflower.jpg",
+    "img": "/Images/Honey-Cauliflower.webp",
     "description": "Fried cauliflower coated in sweet honey glaze.",
     "variants": [
       {
@@ -1993,7 +1993,7 @@
     "id": 142,
     "name": "Baby Corn Crispy",
     "category": "Street Food",
-    "img": "/Images/Baby-Corn-Crispy.jpg",
+    "img": "/Images/Baby-Corn-Crispy.webp",
     "description": "Crispy fried baby corn with spices.",
     "variants": [
       {
@@ -2006,7 +2006,7 @@
     "id": 143,
     "name": "Honey Chilli Potato",
     "category": "Street Food",
-    "img": "/Images/Honey-Chilli-Potato.jpg",
+    "img": "/Images/Honey-Chilli-Potato.webp",
     "description": "Fried potato fingers tossed in honey chilli sauce.",
     "variants": [
       {
@@ -2019,7 +2019,7 @@
     "id": 144,
     "name": "American Chopsuey",
     "category": "Street Food",
-    "img": "/Images/American-Chopsuey.jpg",
+    "img": "/Images/American-Chopsuey.webp",
     "description": "Crispy noodles topped with sweet and tangy vegetable gravy.",
     "variants": [
       {
@@ -2032,7 +2032,7 @@
     "id": 145,
     "name": "Regular Fried Rice",
     "category": "Fried Rice",
-    "img": "/Images/Regular-Fried-Rice.jpg",
+    "img": "/Images/Regular-Fried-Rice.webp",
     "description": "Plain fried rice tossed with vegetables and seasoning.",
     "variants": [
       {
@@ -2045,7 +2045,7 @@
     "id": 146,
     "name": "Singapore Fried Rice",
     "category": "Fried Rice",
-    "img": "/Images/Singapore-Fried-Rice.jpg",
+    "img": "/Images/Singapore-Fried-Rice.webp",
     "description": "Spicy Singapore-style fried rice with veggies.",
     "variants": [
       {
@@ -2058,7 +2058,7 @@
     "id": 147,
     "name": "Chilli Garlic Fried Rice",
     "category": "Fried Rice",
-    "img": "/Images/Chilli-Garlic-Fried-Rice.jpg",
+    "img": "/Images/Chilli-Garlic-Fried-Rice.webp",
     "description": "Fried rice flavoured with chilli and garlic.",
     "variants": [
       {
@@ -2071,7 +2071,7 @@
     "id": 148,
     "name": "Sezwan Fried Rice",
     "category": "Fried Rice",
-    "img": "/Images/Sezwan-Fried-Rice.jpg",
+    "img": "/Images/Sezwan-Fried-Rice.webp",
     "description": "Hot and spicy schezwan-style fried rice.",
     "variants": [
       {
@@ -2084,7 +2084,7 @@
     "id": 149,
     "name": "Garlic Fried Rice",
     "category": "Fried Rice",
-    "img": "/Images/Garlic-Fried-Rice.jpg",
+    "img": "/Images/Garlic-Fried-Rice.webp",
     "description": "Aromatic fried rice with rich garlic flavour.",
     "variants": [
       {
@@ -2097,7 +2097,7 @@
     "id": 150,
     "name": "New Vijay Bakery Special Atta Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Atta-Kulcha.jpg",
+    "img": "/Images/Atta-Kulcha.webp",
     "description": "Special atta kulcha prepared with house spices and butter.",
     "variants": [
       {
@@ -2110,7 +2110,7 @@
     "id": 151,
     "name": "Churchur Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Churchur-Kulcha.jpg",
+    "img": "/Images/Churchur-Kulcha.webp",
     "description": "Crispy layered churchur-style kulcha served hot.",
     "variants": [
       {
@@ -2123,7 +2123,7 @@
     "id": 152,
     "name": "Batala Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Batala-Kulcha.jpg",
+    "img": "/Images/Batala-Kulcha.webp",
     "description": "Traditional Batala-style kulcha, bakery special.",
     "variants": [
       {
@@ -2136,7 +2136,7 @@
     "id": 153,
     "name": "Mix Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Mix-Kulcha.jpg",
+    "img": "/Images/Mix-Kulcha.webp",
     "description": "Kulcha stuffed with mixed vegetable filling.",
     "variants": [
       {
@@ -2149,7 +2149,7 @@
     "id": 154,
     "name": "Onion Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Onion-Kulcha.jpg",
+    "img": "/Images/Onion-Kulcha.webp",
     "description": "Kulcha stuffed with spiced onion filling.",
     "variants": [
       {
@@ -2162,7 +2162,7 @@
     "id": 155,
     "name": "Kulcha Patty (Without Paneer)",
     "category": "Kulcha",
-    "img": "/Images/Kulcha-Patty-Without-Paneer.jpg",
+    "img": "/Images/Kulcha-Patty-Without-Paneer.webp",
     "description": "Kulcha served with patty and curry, without paneer.",
     "variants": [
       {
@@ -2175,7 +2175,7 @@
     "id": 156,
     "name": "Patty Paneer",
     "category": "Kulcha",
-    "img": "/Images/Patty-Paneer-Kulcha.jpg",
+    "img": "/Images/Patty-Paneer-Kulcha.webp",
     "description": "Paneer patty kulcha served with rich curry.",
     "variants": [
       {
@@ -2188,7 +2188,7 @@
     "id": 157,
     "name": "Paneer Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Paneer-Kulcha.jpg",
+    "img": "/Images/Paneer-Kulcha.webp",
     "description": "Kulcha stuffed with spiced paneer filling.",
     "variants": [
       {
@@ -2201,7 +2201,7 @@
     "id": 158,
     "name": "Papad Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Papad-Kulcha.jpg",
+    "img": "/Images/Papad-Kulcha.webp",
     "description": "Crispy papad-stuffed kulcha with butter.",
     "variants": [
       {
@@ -2214,7 +2214,7 @@
     "id": 159,
     "name": "Ginger Garlic Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Ginger-Garlic-Kulcha.jpg",
+    "img": "/Images/Ginger-Garlic-Kulcha.webp",
     "description": "Kulcha flavoured with ginger and garlic seasoning.",
     "variants": [
       {
@@ -2227,7 +2227,7 @@
     "id": 160,
     "name": "Gobi Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Gobi-Kulcha.jpg",
+    "img": "/Images/Gobi-Kulcha.webp",
     "description": "Kulcha stuffed with spiced cauliflower filling.",
     "variants": [
       {
@@ -2240,7 +2240,7 @@
     "id": 161,
     "name": "Special Desi Ghee Wala Kulcha",
     "category": "Kulcha",
-    "img": "/Images/Desi-Ghee-Wala-Kulcha.jpg",
+    "img": "/Images/Desi-Ghee-Wala-Kulcha.webp",
     "description": "Kulcha roasted and topped generously with desi ghee.",
     "variants": [
       {
@@ -2253,7 +2253,7 @@
     "id": 163,
     "name": "Fry Champ",
     "category": "Champ",
-    "img": "/Images/Fry-Champ.jpg",
+    "img": "/Images/Fry-Champ.webp",
     "description": "Fried champ pieces tossed with spices and onions.",
     "variants": [
       {
@@ -2266,7 +2266,7 @@
     "id": 164,
     "name": "Malai Champ",
     "category": "Champ",
-    "img": "/Images/Malai-Champ.jpg",
+    "img": "/Images/Malai-Champ.webp",
     "description": "Creamy malai-based champ preparation.",
     "variants": [
       {
@@ -2279,7 +2279,7 @@
     "id": 165,
     "name": "Gravy Champ",
     "category": "Champ",
-    "img": "/Images/Gravy-Champ.jpg",
+    "img": "/Images/Gravy-Champ.webp",
     "description": "Champ cooked in rich spiced gravy.",
     "variants": [
       {
@@ -2292,7 +2292,7 @@
     "id": 166,
     "name": "Achari Champ",
     "category": "Champ",
-    "img": "/Images/Achari-Champ.jpg",
+    "img": "/Images/Achari-Champ.webp",
     "description": "Tangy achari-flavoured champ dish.",
     "variants": [
       {
@@ -2305,7 +2305,7 @@
     "id": 167,
     "name": "Manchurian Toast",
     "category": "Street Food",
-    "img": "/Images/Manchurian-Toast.jpg",
+    "img": "/Images/Manchurian-Toast.webp",
     "description": "Crispy toast topped with veg manchurian gravy.",
     "variants": [
       {
@@ -2318,7 +2318,7 @@
     "id": 168,
     "name": "Extra Cheese",
     "category": "Add-Ons",
-    "img": "/Images/Extra-Cheese.jpg",
+    "img": "/Images/Extra-Cheese.webp",
     "description": "Additional cheese topping to enhance flavour.",
     "variants": [
       {
@@ -2335,7 +2335,7 @@
     "id": 169,
     "name": "Extra Topping",
     "category": "Add-Ons",
-    "img": "/Images/Extra-Topping.jpg",
+    "img": "/Images/Extra-Topping.webp",
     "description": "Extra vegetable or topping addition.",
     "variants": [
       {
@@ -2352,7 +2352,7 @@
     "id": 170,
     "name": "Cheese Burst",
     "category": "Add-Ons",
-    "img": "/Images/Cheese-Burst.jpg",
+    "img": "/Images/Cheese-Burst.webp",
     "description": "Cheese burst base for extra cheesy experience.",
     "variants": [
       {
@@ -2369,7 +2369,7 @@
     "id": 171,
     "name": "Extra Dip",
     "category": "Add-Ons",
-    "img": "/Images/Extra-Dip.jpg",
+    "img": "/Images/Extra-Dip.webp",
     "description": "Additional dip or sauce.",
     "variants": [
       {

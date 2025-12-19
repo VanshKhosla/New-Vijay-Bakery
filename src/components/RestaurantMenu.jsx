@@ -277,7 +277,7 @@ export default function RestaurantMenu() {
             {/* QR CODE */}
             <div className="p-2 bg-white rounded-xl shadow-lg">
               <img
-                src="/Images/insta-qr.jpg"
+                src="/Images/insta-qr.webp"
                 alt="Instagram QR Code"
                 className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-lg"
                 style={{
@@ -320,7 +320,7 @@ export default function RestaurantMenu() {
             {/* QR CODE */}
             <div className="p-2 bg-white rounded-xl shadow-lg">
               <img
-                src="/Images/fb-qr.png"
+                src="/Images/fb-qr.webp"
                 alt="Facebook QR Code"
                 className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-lg"
                 style={{

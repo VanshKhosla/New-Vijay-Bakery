@@ -266,7 +266,8 @@ export default function RestaurantMenu() {
 
       <footer className="max-w-6xl mx-auto mt-12 text-center">
         {/* INSTAGRAM SECTION */}
-        <div className="flex flex-col items-center justify-center gap-4 mb-8">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
+          {/* INSTAGRAM */}
           <a
             href="https://www.instagram.com/newvijaybakery/"
             target="_blank"
@@ -276,9 +277,13 @@ export default function RestaurantMenu() {
             {/* QR CODE */}
             <div className="p-2 bg-white rounded-xl shadow-lg">
               <img
-                src="/Images/insta-qr.webp"
+                src="/Images/insta-qr.jpg"
                 alt="Instagram QR Code"
-                className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-lg"
+                style={{
+                  border: "2px solid #ffd700",
+                  boxShadow: "0 0 15px rgba(255, 215, 0, 0.4)"
+                }}
                 loading="lazy"
               />
             </div>
@@ -302,6 +307,47 @@ export default function RestaurantMenu() {
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
               <span>Follow us on Instagram</span>
+            </div>
+          </a>
+
+          {/* FACEBOOK */}
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center gap-3 transition-transform hover:scale-105"
+          >
+            {/* QR CODE */}
+            <div className="p-2 bg-white rounded-xl shadow-lg">
+              <img
+                src="/Images/fb-qr.png"
+                alt="Facebook QR Code"
+                className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-lg"
+                style={{
+                  border: "2px solid #1877F2",
+                  boxShadow: "0 0 15px rgba(24, 119, 242, 0.4)"
+                }}
+                loading="lazy"
+              />
+            </div>
+
+            {/* CTA + LOGO */}
+            <div className="flex items-center gap-2 text-[#1877F2] font-semibold bg-white/10 px-4 py-2 rounded-full border border-white/10 hover:bg-white/20 transition">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-facebook"
+              >
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+              <span>Like us on Facebook</span>
             </div>
           </a>
         </div>
